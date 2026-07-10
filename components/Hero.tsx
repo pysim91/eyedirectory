@@ -19,7 +19,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative flex min-h-[92vh] flex-col justify-center overflow-hidden border-b border-line bg-white px-6">
+    <section className="relative flex min-h-[92vh] flex-col justify-center overflow-hidden border-b border-line bg-white px-6 dark:border-white/10 dark:bg-ink">
       <VisionScanSweep delay={0.3} />
 
       <div className="mx-auto w-full max-w-6xl">
@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-primary"
+          className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-primary dark:text-primary-light"
         >
           200+ accredited eye hospitals, nationwide
         </motion.p>
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.65, 0, 0.35, 1] }}
-          className="text-hero-mobile font-extrabold text-ink md:text-hero-desktop"
+          className="text-hero-mobile font-extrabold text-ink dark:text-white md:text-hero-desktop"
         >
           Find eye care
           <br />
@@ -49,7 +49,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-8 max-w-xl text-lg font-medium text-ink/70 md:text-xl"
+          className="mt-8 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70 md:text-xl"
         >
           Compare accredited hospitals, specialists, and outcomes side by
           side. Search by city or condition and book with confidence.
@@ -60,12 +60,12 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.65 }}
           onSubmit={handleSearch}
-          className="mt-10 flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-line bg-white p-2 shadow-[0_8px_40px_-16px_rgba(30,79,255,0.25)] sm:flex-row"
+          className="mt-10 flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-line bg-white p-2 shadow-[0_8px_40px_-16px_rgba(30,79,255,0.25)] dark:border-white/10 dark:bg-surface sm:flex-row"
         >
           <div className="relative flex-1">
             <Search
               size={20}
-              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/40"
+              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/40 dark:text-white/40"
             />
             <input
               type="text"
@@ -73,7 +73,7 @@ export default function Hero() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search city or specialty, e.g. Cataract"
               aria-label="Search hospitals by city or specialty"
-              className="w-full rounded-xl border-none bg-transparent py-3.5 pl-12 pr-4 text-base font-medium text-ink placeholder:text-ink/40"
+              className="w-full rounded-xl border-none bg-transparent py-3.5 pl-12 pr-4 text-base font-medium text-ink placeholder:text-ink/40 dark:text-white dark:placeholder:text-white/40"
             />
           </div>
           <button
@@ -95,7 +95,7 @@ export default function Hero() {
               key={s}
               type="button"
               onClick={() => router.push(`/hospitals?specialty=${encodeURIComponent(s)}`)}
-              className="tag-pill bg-sky text-sm transition-colors hover:border-primary"
+              className="tag-pill bg-sky text-sm transition-colors hover:border-primary dark:bg-sky-dark dark:hover:border-primary-light"
             >
               {s}
             </button>

@@ -13,17 +13,17 @@ export default function TestimonialCarousel() {
       {testimonials.map((t, i) => (
         <div
           key={i}
-          className="flex w-[320px] shrink-0 snap-start flex-col gap-4 rounded-2xl border border-line bg-white p-6 md:w-[380px]"
+          className="flex w-[320px] shrink-0 snap-start flex-col gap-4 rounded-2xl border border-line bg-white p-6 dark:border-white/10 dark:bg-surface md:w-[380px]"
         >
           <div className="flex gap-1 text-primary">
             {Array.from({ length: t.rating }).map((_, idx) => (
               <Star key={idx} size={16} className="fill-primary text-primary" />
             ))}
           </div>
-          <p className="text-lg font-medium leading-snug text-ink">
+          <p className="text-lg font-medium leading-snug text-ink dark:text-white">
             &ldquo;{t.quote}&rdquo;
           </p>
-          <div className="mt-auto text-sm font-bold text-ink/60">
+          <div className="mt-auto text-sm font-bold text-ink/60 dark:text-white/60">
             {t.author} &middot; {t.hospital}
           </div>
         </div>

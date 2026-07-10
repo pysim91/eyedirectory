@@ -23,7 +23,7 @@ export function VisionScanSweep({ delay = 0 }: { delay?: number }) {
 
 export function ScanDivider() {
   return (
-    <div className="relative h-px w-full overflow-hidden bg-line">
+    <div className="relative h-px w-full overflow-hidden bg-line dark:bg-white/10">
       <motion.div
         className="absolute inset-y-0 w-24 bg-gradient-to-r from-transparent via-primary to-transparent"
         initial={{ x: "-10%" }}

@@ -5,7 +5,7 @@ import { slugifySpecialty } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line bg-ink text-white">
+    <footer className="border-t border-line bg-ink text-white dark:border-white/10 dark:bg-surface">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">

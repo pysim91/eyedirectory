@@ -13,12 +13,12 @@ export default function HospitalsPage({
 }) {
   return (
     <div>
-      <div className="border-b border-line bg-sky px-6 py-16">
+      <div className="border-b border-line bg-sky px-6 py-16 dark:border-white/10 dark:bg-sky-dark">
         <div className="mx-auto max-w-7xl">
-          <h1 className="text-section-header font-extrabold text-ink">
+          <h1 className="text-section-header font-extrabold text-ink dark:text-white">
             Hospital Directory
           </h1>
-          <p className="mt-3 max-w-xl text-lg font-medium text-ink/70">
+          <p className="mt-3 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70">
             Browse accredited eye hospitals by specialty, city, or insurance.
           </p>
         </div>

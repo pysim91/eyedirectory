@@ -36,10 +36,10 @@ export default function HospitalDetailPage({
 
   return (
     <div>
-      <div className="border-b border-line bg-sky px-6 py-16">
+      <div className="border-b border-line bg-sky px-6 py-16 dark:border-white/10 dark:bg-sky-dark">
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-wrap items-center gap-2 text-sm font-bold text-ink/50">
-            <Link href="/hospitals" className="hover:text-primary">
+          <div className="flex flex-wrap items-center gap-2 text-sm font-bold text-ink/50 dark:text-white/50">
+            <Link href="/hospitals" className="hover:text-primary dark:hover:text-primary-light">
               Directory
             </Link>
             <span>/</span>
@@ -48,14 +48,14 @@ export default function HospitalDetailPage({
 
           <div className="mt-6 flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <div className="flex items-center gap-2 text-sm font-bold text-primary">
+              <div className="flex items-center gap-2 text-sm font-bold text-primary dark:text-primary-light">
                 <ShieldCheck size={16} />
                 {hospital.accreditation}
               </div>
-              <h1 className="mt-3 text-section-header font-extrabold text-ink">
+              <h1 className="mt-3 text-section-header font-extrabold text-ink dark:text-white">
                 {hospital.name}
               </h1>
-              <div className="mt-3 flex flex-wrap items-center gap-4 text-base font-medium text-ink/60">
+              <div className="mt-3 flex flex-wrap items-center gap-4 text-base font-medium text-ink/60 dark:text-white/60">
                 <span className="flex items-center gap-1.5">
                   <MapPin size={16} />
                   {hospital.city}, {hospital.state}
@@ -104,8 +104,8 @@ export default function HospitalDetailPage({
 
         <RevealGroup className="mt-16">
           <RevealItem>
-            <h2 className="text-2xl font-extrabold text-ink">About</h2>
-            <p className="mt-3 max-w-3xl text-lg font-medium leading-relaxed text-ink/70">
+            <h2 className="text-2xl font-extrabold text-ink dark:text-white">About</h2>
+            <p className="mt-3 max-w-3xl text-lg font-medium leading-relaxed text-ink/70 dark:text-white/70">
               {hospital.description}
             </p>
           </RevealItem>
@@ -115,15 +115,15 @@ export default function HospitalDetailPage({
               <Link
                 key={s}
                 href={`/specialties/${slugifySpecialty(s)}`}
-                className="tag-pill bg-sky hover:border-primary"
+                className="tag-pill bg-sky hover:border-primary dark:bg-sky-dark dark:hover:border-primary-light"
               >
                 {s}
               </Link>
             ))}
           </RevealItem>
 
-          <RevealItem className="mt-6 flex items-center gap-2 text-base font-medium text-ink/70">
-            <CreditCard size={18} className="text-primary" />
+          <RevealItem className="mt-6 flex items-center gap-2 text-base font-medium text-ink/70 dark:text-white/70">
+            <CreditCard size={18} className="text-primary dark:text-primary-light" />
             Accepts: {hospital.insuranceAccepted.join(", ")}
           </RevealItem>
         </RevealGroup>
@@ -132,7 +132,7 @@ export default function HospitalDetailPage({
 
         <RevealGroup className="mt-16">
           <RevealItem>
-            <h2 className="text-2xl font-extrabold text-ink">Our specialists</h2>
+            <h2 className="text-2xl font-extrabold text-ink dark:text-white">Our specialists</h2>
           </RevealItem>
           <RevealItem className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {hospital.doctors.map((doc) => (
@@ -145,20 +145,20 @@ export default function HospitalDetailPage({
 
         <RevealGroup className="mt-16">
           <RevealItem>
-            <h2 className="text-2xl font-extrabold text-ink">Patient reviews</h2>
+            <h2 className="text-2xl font-extrabold text-ink dark:text-white">Patient reviews</h2>
           </RevealItem>
           <RevealItem className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
             {hospital.reviews.map((r, i) => (
-              <div key={i} className="rounded-2xl border border-line bg-white p-6">
+              <div key={i} className="rounded-2xl border border-line bg-white p-6 dark:border-white/10 dark:bg-surface">
                 <div className="flex gap-1 text-primary">
                   {Array.from({ length: r.rating }).map((_, idx) => (
                     <Star key={idx} size={14} className="fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="mt-3 text-base font-medium leading-snug text-ink">
+                <p className="mt-3 text-base font-medium leading-snug text-ink dark:text-white">
                   &ldquo;{r.quote}&rdquo;
                 </p>
-                <p className="mt-4 text-sm font-bold text-ink/50">{r.author}</p>
+                <p className="mt-4 text-sm font-bold text-ink/50 dark:text-white/50">{r.author}</p>
               </div>
             ))}
           </RevealItem>
@@ -168,10 +168,10 @@ export default function HospitalDetailPage({
 
         <RevealGroup className="mt-16">
           <RevealItem>
-            <h2 className="text-2xl font-extrabold text-ink">Location</h2>
+            <h2 className="text-2xl font-extrabold text-ink dark:text-white">Location</h2>
           </RevealItem>
-          <RevealItem className="mt-6 flex h-64 items-center justify-center rounded-2xl border border-line bg-sky">
-            <div className="flex flex-col items-center gap-2 text-ink/40">
+          <RevealItem className="mt-6 flex h-64 items-center justify-center rounded-2xl border border-line bg-sky dark:border-white/10 dark:bg-sky-dark">
+            <div className="flex flex-col items-center gap-2 text-ink/40 dark:text-white/40">
               <MapPin size={32} />
               <span className="text-sm font-bold uppercase tracking-wider">
                 Map placeholder &middot; {hospital.city}, {hospital.state}
@@ -180,7 +180,7 @@ export default function HospitalDetailPage({
           </RevealItem>
         </RevealGroup>
 
-        <RevealGroup id="book" className="mt-16 scroll-mt-24 rounded-2xl bg-ink px-8 py-14 text-center">
+        <RevealGroup id="book" className="mt-16 scroll-mt-24 rounded-2xl bg-ink px-8 py-14 text-center dark:bg-surface">
           <RevealItem>
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
               <Calendar size={22} />

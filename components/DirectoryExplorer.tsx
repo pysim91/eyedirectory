@@ -38,13 +38,13 @@ export default function DirectoryExplorer({
 
   return (
     <div>
-      <div className="sticky top-[73px] z-40 w-full border-b border-line bg-white/95 px-6 py-4 backdrop-blur">
+      <div className="sticky top-[73px] z-40 w-full border-b border-line bg-white/95 px-6 py-4 backdrop-blur dark:border-white/10 dark:bg-ink/95">
         <div className="mx-auto flex max-w-7xl flex-col gap-4">
           <div className="flex flex-col gap-3 md:flex-row md:items-center">
             <div className="relative flex-1">
               <Search
                 size={18}
-                className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/40"
+                className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/40 dark:text-white/40"
               />
               <input
                 type="text"
@@ -52,14 +52,14 @@ export default function DirectoryExplorer({
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search by hospital, city, or specialty..."
                 aria-label="Search hospitals"
-                className="w-full rounded-full border border-line bg-white py-3 pl-11 pr-4 text-base font-medium text-ink placeholder:text-ink/40 focus:border-primary"
+                className="w-full rounded-full border border-line bg-white py-3 pl-11 pr-4 text-base font-medium text-ink placeholder:text-ink/40 focus:border-primary dark:border-white/10 dark:bg-surface dark:text-white dark:placeholder:text-white/40 dark:focus:border-primary-light"
               />
             </div>
             <button
               type="button"
               onClick={() => setFiltersOpen((v) => !v)}
               aria-expanded={filtersOpen}
-              className="flex items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-base font-bold text-ink transition-colors hover:border-primary md:w-auto"
+              className="flex items-center justify-center gap-2 rounded-full border border-line px-5 py-3 text-base font-bold text-ink transition-colors hover:border-primary dark:border-white/10 dark:text-white dark:hover:border-primary-light md:w-auto"
             >
               <SlidersHorizontal size={16} />
               Filters
@@ -102,7 +102,7 @@ export default function DirectoryExplorer({
       </div>
 
       <div className="mx-auto max-w-7xl px-6 py-10">
-        <p className="mb-6 text-sm font-bold uppercase tracking-wider text-ink/50">
+        <p className="mb-6 text-sm font-bold uppercase tracking-wider text-ink/50 dark:text-white/50">
           {filtered.length} {filtered.length === 1 ? "hospital" : "hospitals"} found
         </p>
 
@@ -127,9 +127,9 @@ export default function DirectoryExplorer({
         </motion.div>
 
         {filtered.length === 0 && (
-          <div className="rounded-2xl border border-dashed border-line py-20 text-center">
-            <p className="text-lg font-bold text-ink">No hospitals match those filters.</p>
-            <p className="mt-1 text-base font-medium text-ink/60">
+          <div className="rounded-2xl border border-dashed border-line py-20 text-center dark:border-white/10">
+            <p className="text-lg font-bold text-ink dark:text-white">No hospitals match those filters.</p>
+            <p className="mt-1 text-base font-medium text-ink/60 dark:text-white/60">
               Try broadening your search or clearing a filter.
             </p>
           </div>
@@ -152,13 +152,13 @@ function FilterSelect({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-xs font-bold uppercase tracking-wider text-ink/50">
+      <span className="text-xs font-bold uppercase tracking-wider text-ink/50 dark:text-white/50">
         {label}
       </span>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="rounded-lg border border-line bg-white px-3 py-2.5 text-base font-medium text-ink focus:border-primary"
+        className="rounded-lg border border-line bg-white px-3 py-2.5 text-base font-medium text-ink focus:border-primary dark:border-white/10 dark:bg-surface dark:text-white dark:focus:border-primary-light"
       >
         {options.map((o) => (
           <option key={o} value={o}>

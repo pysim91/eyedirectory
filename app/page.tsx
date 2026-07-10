@@ -45,17 +45,17 @@ export default function HomePage() {
         <RevealGroup>
           <RevealItem className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-section-header font-extrabold text-ink">
+              <h2 className="text-section-header font-extrabold text-ink dark:text-white">
                 Featured hospitals
               </h2>
-              <p className="mt-3 max-w-xl text-lg font-medium text-ink/70">
+              <p className="mt-3 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70">
                 A sample of accredited hospitals from our directory, ranked by
                 patient rating.
               </p>
             </div>
             <Link
               href="/hospitals"
-              className="text-base font-bold text-primary hover:text-primary-deep"
+              className="text-base font-bold text-primary hover:text-primary-deep dark:text-primary-light"
             >
               View full directory →
             </Link>
@@ -69,11 +69,11 @@ export default function HomePage() {
         </RevealGroup>
       </section>
 
-      <section className="bg-sky px-6 py-24">
+      <section className="bg-sky px-6 py-24 dark:bg-sky-dark">
         <div className="mx-auto max-w-7xl">
           <RevealGroup>
             <RevealItem>
-              <h2 className="text-section-header font-extrabold text-ink">
+              <h2 className="text-section-header font-extrabold text-ink dark:text-white">
                 How booking works
               </h2>
             </RevealItem>
@@ -81,13 +81,13 @@ export default function HomePage() {
               {steps.map((step, i) => (
                 <div
                   key={step.title}
-                  className="rounded-2xl border border-line bg-white p-8"
+                  className="rounded-2xl border border-line bg-white p-8 dark:border-white/10 dark:bg-surface"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
                     <step.icon size={22} />
                   </div>
-                  <h3 className="mt-6 text-xl font-bold text-ink">{step.title}</h3>
-                  <p className="mt-2 text-base font-medium text-ink/70">
+                  <h3 className="mt-6 text-xl font-bold text-ink dark:text-white">{step.title}</h3>
+                  <p className="mt-2 text-base font-medium text-ink/70 dark:text-white/70">
                     {step.body}
                   </p>
                 </div>
@@ -100,10 +100,10 @@ export default function HomePage() {
       <section id="about" className="mx-auto max-w-7xl px-6 py-24">
         <RevealGroup>
           <RevealItem>
-            <h2 className="text-section-header font-extrabold text-ink">
+            <h2 className="text-section-header font-extrabold text-ink dark:text-white">
               Trusted across the country
             </h2>
-            <p className="mt-3 max-w-2xl text-lg font-medium text-ink/70">
+            <p className="mt-3 max-w-2xl text-lg font-medium text-ink/70 dark:text-white/70">
               Every hospital in our directory is independently accredited by
               the Joint Commission or AAAHC before it's listed.
             </p>
@@ -113,12 +113,12 @@ export default function HomePage() {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="rounded-2xl border border-line bg-white p-6 text-center"
+                className="rounded-2xl border border-line bg-white p-6 text-center dark:border-white/10 dark:bg-surface"
               >
-                <div className="text-4xl font-extrabold text-primary">
+                <div className="text-4xl font-extrabold text-primary dark:text-primary-light">
                   {s.value}
                 </div>
-                <div className="mt-2 text-sm font-bold uppercase tracking-wide text-ink/50">
+                <div className="mt-2 text-sm font-bold uppercase tracking-wide text-ink/50 dark:text-white/50">
                   {s.label}
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function HomePage() {
           </RevealItem>
 
           <RevealItem className="mt-16">
-            <h3 className="text-2xl font-extrabold text-ink">
+            <h3 className="text-2xl font-extrabold text-ink dark:text-white">
               What patients are saying
             </h3>
             <div className="mt-6">
@@ -141,10 +141,10 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24 text-center">
         <RevealGroup>
           <RevealItem>
-            <h2 className="mx-auto max-w-2xl text-section-header font-extrabold text-ink">
+            <h2 className="mx-auto max-w-2xl text-section-header font-extrabold text-ink dark:text-white">
               Ready to see clearly?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-ink/70">
+            <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70">
               Browse the full directory and find a specialist near you today.
             </p>
             <Link
