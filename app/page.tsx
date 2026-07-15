@@ -1,39 +1,33 @@
 import Link from "next/link";
-import { ShieldCheck, Users, Search, CalendarCheck } from "lucide-react";
+import { Search, ShieldCheck, Phone } from "lucide-react";
 import Hero from "@/components/Hero";
-import HospitalCard from "@/components/HospitalCard";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { ScanDivider } from "@/components/VisionScanLine";
 import { RevealGroup, RevealItem } from "@/components/RevealOnScroll";
-import { hospitals } from "@/data/hospitals";
-
-const stats = [
-  { label: "Partner hospitals", value: "200+" },
-  { label: "Board-certified specialists", value: "1,400+" },
-  { label: "Patient reviews", value: "38,000+" },
-  { label: "Cities covered", value: "60+" },
-];
+import { hospitals, serviceLevels, serviceLevelCopy, getHospitalsByServiceLevel } from "@/data/hospitals";
+import { serviceLevelMeta } from "@/lib/utils";
 
 const steps = [
   {
-    title: "Search your condition or city",
-    body: "Tell us what you need, whether that's LASIK, a pediatric exam, or retina care near you.",
+    title: "Search by postcode, city, or region",
+    body: "Find the nearest or most relevant eye casualty service in seconds",
     icon: Search,
   },
   {
-    title: "Compare accredited hospitals",
-    body: "Review specialties, ratings, accreditation, and accepted insurance side by side.",
+    title: "Check the service level",
+    body: "Walk-in, booked-referral only, or no dedicated emergency eye cover — know before you send a patient",
     icon: ShieldCheck,
   },
   {
-    title: "Book your appointment",
-    body: "Choose a specialist and request an appointment directly from their profile.",
-    icon: CalendarCheck,
+    title: "Contact directly to refer",
+    body: "Call or email using the listed details and any referral instructions on the service's page",
+    icon: Phone,
   },
 ];
 
 export default function HomePage() {
-  const featured = hospitals.slice(0, 6);
+  const countsByLevel = Object.fromEntries(
+    serviceLevels.map((l) => [l, getHospitalsByServiceLevel(l).length])
+  );
 
   return (
     <>
@@ -41,44 +35,16 @@ export default function HomePage() {
 
       <ScanDivider />
 
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <RevealGroup>
-          <RevealItem className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="text-section-header font-extrabold text-ink dark:text-white">
-                Featured hospitals
-              </h2>
-              <p className="mt-3 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70">
-                A sample of accredited hospitals from our directory, ranked by
-                patient rating.
-              </p>
-            </div>
-            <Link
-              href="/hospitals"
-              className="text-base font-bold text-primary hover:text-primary-deep dark:text-primary-light"
-            >
-              View full directory →
-            </Link>
-          </RevealItem>
-
-          <RevealItem className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((h) => (
-              <HospitalCard key={h.slug} hospital={h} />
-            ))}
-          </RevealItem>
-        </RevealGroup>
-      </section>
-
       <section className="bg-sky px-6 py-24 dark:bg-sky-dark">
         <div className="mx-auto max-w-7xl">
           <RevealGroup>
             <RevealItem>
               <h2 className="text-section-header font-extrabold text-ink dark:text-white">
-                How booking works
+                How to use this directory
               </h2>
             </RevealItem>
             <RevealItem className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {steps.map((step, i) => (
+              {steps.map((step) => (
                 <div
                   key={step.title}
                   className="rounded-2xl border border-line bg-white p-8 dark:border-white/10 dark:bg-surface"
@@ -97,63 +63,59 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-6 py-24">
+      <section id="about" className="mx-auto max-w-7xl scroll-mt-12 px-6 py-24">
         <RevealGroup>
           <RevealItem>
             <h2 className="text-section-header font-extrabold text-ink dark:text-white">
-              Trusted across the country
+              A UK-wide picture, at a glance
             </h2>
             <p className="mt-3 max-w-2xl text-lg font-medium text-ink/70 dark:text-white/70">
-              Every hospital in our directory is independently accredited by
-              the Joint Commission or AAAHC before it's listed.
+              {hospitals.length} sites across England, Scotland, Wales, and
+              Northern Ireland, each categorised by how a patient can
+              actually be seen
             </p>
           </RevealItem>
 
-          <RevealItem className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-2xl border border-line bg-white p-6 text-center dark:border-white/10 dark:bg-surface"
+          <RevealItem className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {serviceLevels.map((level) => (
+              <Link
+                key={level}
+                href={`/service-levels/${level}`}
+                className="group rounded-2xl border border-line bg-white p-6 transition-colors hover:border-primary dark:border-white/10 dark:bg-surface dark:hover:border-primary-light"
               >
-                <div className="text-4xl font-extrabold text-primary dark:text-primary-light">
-                  {s.value}
+                <div className="flex items-center gap-2">
+                  <span className={`h-2.5 w-2.5 rounded-full ${serviceLevelMeta[level].dot}`} />
+                  <span className="text-sm font-bold uppercase tracking-wide text-ink/50 dark:text-white/50">
+                    {serviceLevelMeta[level].label}
+                  </span>
                 </div>
-                <div className="mt-2 text-sm font-bold uppercase tracking-wide text-ink/50 dark:text-white/50">
-                  {s.label}
+                <div className="mt-3 text-4xl font-extrabold text-primary dark:text-primary-light">
+                  {countsByLevel[level]}
                 </div>
-              </div>
+                <p className="mt-2 text-sm font-medium text-ink/60 dark:text-white/60">
+                  {serviceLevelCopy[level].tagline}
+                </p>
+              </Link>
             ))}
           </RevealItem>
 
-          <RevealItem className="mt-16">
-            <h3 className="text-2xl font-extrabold text-ink dark:text-white">
-              What patients are saying
-            </h3>
-            <div className="mt-6">
-              <TestimonialCarousel />
-            </div>
-          </RevealItem>
-        </RevealGroup>
-      </section>
-
-      <ScanDivider />
-
-      <section className="mx-auto max-w-7xl px-6 py-24 text-center">
-        <RevealGroup>
-          <RevealItem>
-            <h2 className="mx-auto max-w-2xl text-section-header font-extrabold text-ink dark:text-white">
-              Ready to see clearly?
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70">
-              Browse the full directory and find a specialist near you today.
-            </p>
-            <Link
-              href="/hospitals"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-lg font-extrabold text-white transition-colors hover:bg-primary-deep"
-            >
-              <Users size={20} />
-              Browse the Directory
-            </Link>
+          <RevealItem className="mt-12 rounded-2xl border border-line bg-sky p-6 dark:border-white/10 dark:bg-sky-dark">
+            <ul className="space-y-2 text-sm font-medium leading-relaxed text-ink/80 dark:text-white/80">
+              <li className="flex gap-2">
+                <span className="text-primary dark:text-primary-light">•</span>
+                Data adapted from the UK Eye Casualty Services map,
+                originally created by Jonathan Than (Consultant
+                Ophthalmologist at Milton Keynes NHS Foundation Trust) and
+                maintained by Ayesha Karimi (ST6 Ophthalmology Resident -
+                Kent, Surrey, Sussex Deanery)
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary dark:text-primary-light">•</span>
+                Website designed and created by Peng Sim (Vitreoretinal
+                Fellow at Guy&apos;s and St Thomas&apos; NHS Foundation
+                Trust)
+              </li>
+            </ul>
           </RevealItem>
         </RevealGroup>
       </section>

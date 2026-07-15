@@ -1,13 +1,27 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Star, ShieldCheck, MapPin } from "lucide-react";
-import { Hospital } from "@/data/hospitals";
-import { picsum } from "@/lib/utils";
+import { MapPin, Phone, Eye } from "lucide-react";
+import { Hospital, ServiceLevel } from "@/data/hospitals";
+import { serviceLevelMeta } from "@/lib/utils";
 
-export default function HospitalCard({ hospital }: { hospital: Hospital }) {
+const tileStyles: Record<ServiceLevel, { bg: string; icon: string }> = {
+  "walk-in": { bg: "bg-status-walkin/10", icon: "text-status-walkin" },
+  booked: { bg: "bg-status-booked/10", icon: "text-status-booked" },
+  none: { bg: "bg-status-none/10", icon: "text-status-none" },
+};
+
+export default function HospitalCard({
+  hospital,
+  distanceMiles,
+}: {
+  hospital: Hospital;
+  distanceMiles?: number;
+}) {
+  const meta = serviceLevelMeta[hospital.serviceLevel];
+  const tile = tileStyles[hospital.serviceLevel];
+
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -15,47 +29,42 @@ export default function HospitalCard({ hospital }: { hospital: Hospital }) {
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white transition-colors duration-300 hover:border-primary dark:border-white/10 dark:bg-surface dark:hover:border-primary-light"
     >
       <Link href={`/hospitals/${hospital.slug}`} className="flex h-full flex-col">
-        <div className="relative h-48 w-full overflow-hidden">
-          <Image
-            src={picsum(hospital.photoSeed, 640, 400)}
-            alt={`${hospital.name} exterior`}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute left-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-2.5 py-1 text-xs font-bold text-ink shadow-sm dark:bg-ink/90 dark:text-white">
-            <ShieldCheck size={14} className="text-primary" />
-            {hospital.accreditation}
-          </div>
+        <div className={`flex h-28 shrink-0 items-center justify-center ${tile.bg}`}>
+          <Eye size={36} strokeWidth={1.5} className={tile.icon} />
         </div>
 
         <div className="flex flex-1 flex-col gap-3 p-6">
-          <div className="flex items-start justify-between gap-2">
-            <h3 className="text-xl font-bold leading-tight text-ink dark:text-white">
-              {hospital.name}
-            </h3>
-            <div className="flex shrink-0 items-center gap-1 text-sm font-bold text-ink dark:text-white">
-              <Star size={14} className="fill-primary text-primary" />
-              {hospital.rating}
-            </div>
+          <div
+            className={`inline-flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-bold ${meta.badge}`}
+          >
+            <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
+            {meta.label}
           </div>
+
+          <h3 className="text-xl font-bold leading-tight text-ink dark:text-white">
+            {hospital.name}
+          </h3>
 
           <div className="flex items-center gap-1.5 text-sm font-medium text-ink/60 dark:text-white/60">
-            <MapPin size={14} />
-            {hospital.city}, {hospital.state}
-          </div>
-
-          <div className="flex flex-wrap gap-2 pt-1">
-            {hospital.specialties.slice(0, 3).map((s) => (
-              <span key={s} className="tag-pill bg-sky text-xs dark:bg-sky-dark">
-                {s}
+            <MapPin size={14} className="shrink-0" />
+            {hospital.city}, {hospital.region}
+            {distanceMiles !== undefined && (
+              <span className="font-bold text-primary dark:text-primary-light">
+                &middot; {distanceMiles < 10 ? distanceMiles.toFixed(1) : Math.round(distanceMiles)} mi
               </span>
-            ))}
+            )}
           </div>
 
-          <div className="mt-auto pt-4">
+          {hospital.telephone && (
+            <div className="flex items-center gap-1.5 text-sm font-medium text-ink/60 dark:text-white/60">
+              <Phone size={14} className="shrink-0" />
+              <span className="truncate">{hospital.telephone.split("\n")[0]}</span>
+            </div>
+          )}
+
+          <div className="mt-auto pt-1">
             <span className="inline-flex items-center gap-1 text-sm font-bold text-primary transition-colors group-hover:text-primary-deep dark:text-primary-light">
-              View Profile
+              View details
               <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
                 →
               </span>

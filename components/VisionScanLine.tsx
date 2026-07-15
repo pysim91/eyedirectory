@@ -7,7 +7,7 @@ export function VisionScanSweep({ delay = 0 }: { delay?: number }) {
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       <motion.div
         className="absolute top-1/2 h-px w-1/3 -translate-y-1/2 bg-gradient-to-r from-transparent via-primary to-transparent"
-        style={{ boxShadow: "0 0 24px 2px rgba(30, 79, 255, 0.6)" }}
+        style={{ boxShadow: "0 0 24px 2px rgba(30, 64, 175, 0.6)" }}
         initial={{ x: "-120%", opacity: 0 }}
         animate={{ x: ["-120%", "320%"], opacity: [0, 1, 1, 0] }}
         transition={{

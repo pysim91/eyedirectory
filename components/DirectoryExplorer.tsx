@@ -1,40 +1,89 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Search, SlidersHorizontal } from "lucide-react";
-import { hospitals, specialtiesList, cities, allInsurances } from "@/data/hospitals";
+import { Search, SlidersHorizontal, MapPin, Loader2 } from "lucide-react";
+import { hospitals, serviceLevels, regions } from "@/data/hospitals";
+import type { ServiceLevel } from "@/data/hospitals";
+import {
+  serviceLevelMeta,
+  looksLikeUKPostcode,
+  geocodeUKPostcode,
+  haversineMiles,
+} from "@/lib/utils";
 import HospitalCard from "@/components/HospitalCard";
+
+type PostcodeStatus = "idle" | "loading" | "found" | "notfound";
 
 export default function DirectoryExplorer({
   initialQuery = "",
-  initialSpecialty = "All",
+  initialServiceLevel = "All",
 }: {
   initialQuery?: string;
-  initialSpecialty?: string;
+  initialServiceLevel?: string;
 }) {
   const [query, setQuery] = useState(initialQuery);
-  const [specialty, setSpecialty] = useState<string>(initialSpecialty);
-  const [city, setCity] = useState<string>("All");
-  const [insurance, setInsurance] = useState<string>("All");
-  const [filtersOpen, setFiltersOpen] = useState(initialSpecialty !== "All");
+  const [serviceLevel, setServiceLevel] = useState<string>(initialServiceLevel);
+  const [region, setRegion] = useState<string>("All");
+  const [filtersOpen, setFiltersOpen] = useState(initialServiceLevel !== "All");
+  const [postcodeCoords, setPostcodeCoords] = useState<{ lat: number; lon: number } | null>(null);
+  const [postcodeStatus, setPostcodeStatus] = useState<PostcodeStatus>("idle");
+  const requestId = useRef(0);
+
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!looksLikeUKPostcode(trimmed)) {
+      setPostcodeCoords(null);
+      setPostcodeStatus("idle");
+      return;
+    }
+
+    setPostcodeStatus("loading");
+    const id = ++requestId.current;
+    const timeout = setTimeout(async () => {
+      const coords = await geocodeUKPostcode(trimmed);
+      if (requestId.current !== id) return;
+      if (coords) {
+        setPostcodeCoords(coords);
+        setPostcodeStatus("found");
+      } else {
+        setPostcodeCoords(null);
+        setPostcodeStatus("notfound");
+      }
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [query]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return hospitals.filter((h) => {
-      const matchesQuery =
-        !q ||
-        h.name.toLowerCase().includes(q) ||
-        h.city.toLowerCase().includes(q) ||
-        h.specialties.some((s) => s.toLowerCase().includes(q));
-      const matchesSpecialty =
-        specialty === "All" || h.specialties.includes(specialty as any);
-      const matchesCity = city === "All" || h.city === city;
-      const matchesInsurance =
-        insurance === "All" || h.insuranceAccepted.includes(insurance);
-      return matchesQuery && matchesSpecialty && matchesCity && matchesInsurance;
-    });
-  }, [query, specialty, city, insurance]);
+
+    const base = hospitals
+      .filter((h) => {
+        const matchesQuery =
+          postcodeCoords !== null ||
+          !q ||
+          h.name.toLowerCase().includes(q) ||
+          h.city.toLowerCase().includes(q) ||
+          h.region.toLowerCase().includes(q);
+        const matchesServiceLevel =
+          serviceLevel === "All" || h.serviceLevel === serviceLevel;
+        const matchesRegion = region === "All" || h.region === region;
+        return matchesQuery && matchesServiceLevel && matchesRegion;
+      })
+      .map((h) => ({
+        ...h,
+        distanceMiles: postcodeCoords
+          ? haversineMiles(postcodeCoords.lat, postcodeCoords.lon, h.lat, h.lon)
+          : undefined,
+      }));
+
+    if (postcodeCoords) {
+      return base.sort((a, b) => a.distanceMiles! - b.distanceMiles!);
+    }
+
+    return base;
+  }, [query, serviceLevel, region, postcodeCoords]);
 
   return (
     <div>
@@ -50,10 +99,16 @@ export default function DirectoryExplorer({
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search by hospital, city, or specialty..."
-                aria-label="Search hospitals"
+                placeholder="Search by postcode, hospital, city, or region..."
+                aria-label="Search hospitals by name, city, region, or UK postcode"
                 className="w-full rounded-full border border-line bg-white py-3 pl-11 pr-4 text-base font-medium text-ink placeholder:text-ink/40 focus:border-primary dark:border-white/10 dark:bg-surface dark:text-white dark:placeholder:text-white/40 dark:focus:border-primary-light"
               />
+              {postcodeStatus === "loading" && (
+                <Loader2
+                  size={16}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 animate-spin text-ink/40 dark:text-white/40"
+                />
+              )}
             </div>
             <button
               type="button"
@@ -66,6 +121,19 @@ export default function DirectoryExplorer({
             </button>
           </div>
 
+          {postcodeStatus === "found" && (
+            <p className="flex items-center gap-1.5 text-sm font-bold text-primary dark:text-primary-light">
+              <MapPin size={14} />
+              Showing nearest services to {query.trim().toUpperCase()}
+            </p>
+          )}
+          {postcodeStatus === "notfound" && (
+            <p className="text-sm font-medium text-ink/50 dark:text-white/50">
+              &ldquo;{query.trim().toUpperCase()}&rdquo; doesn&apos;t look like a recognised UK
+              postcode — showing text matches instead
+            </p>
+          )}
+
           <AnimatePresence initial={false}>
             {filtersOpen && (
               <motion.div
@@ -75,24 +143,21 @@ export default function DirectoryExplorer({
                 transition={{ duration: 0.3, ease: [0.65, 0, 0.35, 1] }}
                 className="overflow-hidden"
               >
-                <div className="grid gap-3 pb-1 sm:grid-cols-3">
+                <div className="grid gap-3 pb-1 sm:grid-cols-2">
                   <FilterSelect
-                    label="Specialty"
-                    value={specialty}
-                    onChange={setSpecialty}
-                    options={["All", ...specialtiesList]}
+                    label="Service level"
+                    value={serviceLevel}
+                    onChange={setServiceLevel}
+                    options={["All", ...serviceLevels]}
+                    optionLabel={(o) =>
+                      o === "All" ? "All" : serviceLevelMeta[o as ServiceLevel].label
+                    }
                   />
                   <FilterSelect
-                    label="Location"
-                    value={city}
-                    onChange={setCity}
-                    options={["All", ...cities]}
-                  />
-                  <FilterSelect
-                    label="Insurance"
-                    value={insurance}
-                    onChange={setInsurance}
-                    options={["All", ...allInsurances]}
+                    label="Region"
+                    value={region}
+                    onChange={setRegion}
+                    options={["All", ...regions]}
                   />
                 </div>
               </motion.div>
@@ -103,7 +168,7 @@ export default function DirectoryExplorer({
 
       <div className="mx-auto max-w-7xl px-6 py-10">
         <p className="mb-6 text-sm font-bold uppercase tracking-wider text-ink/50 dark:text-white/50">
-          {filtered.length} {filtered.length === 1 ? "hospital" : "hospitals"} found
+          {filtered.length} {filtered.length === 1 ? "service" : "services"} found
         </p>
 
         <motion.div
@@ -120,7 +185,7 @@ export default function DirectoryExplorer({
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.3, ease: [0.65, 0, 0.35, 1] }}
               >
-                <HospitalCard hospital={h} />
+                <HospitalCard hospital={h} distanceMiles={h.distanceMiles} />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -128,9 +193,9 @@ export default function DirectoryExplorer({
 
         {filtered.length === 0 && (
           <div className="rounded-2xl border border-dashed border-line py-20 text-center dark:border-white/10">
-            <p className="text-lg font-bold text-ink dark:text-white">No hospitals match those filters.</p>
+            <p className="text-lg font-bold text-ink dark:text-white">No services match those filters</p>
             <p className="mt-1 text-base font-medium text-ink/60 dark:text-white/60">
-              Try broadening your search or clearing a filter.
+              Try broadening your search or clearing a filter
             </p>
           </div>
         )}
@@ -144,11 +209,13 @@ function FilterSelect({
   value,
   onChange,
   options,
+  optionLabel,
 }: {
   label: string;
   value: string;
   onChange: (v: string) => void;
   options: string[];
+  optionLabel?: (o: string) => string;
 }) {
   return (
     <label className="flex flex-col gap-1.5">
@@ -162,7 +229,7 @@ function FilterSelect({
       >
         {options.map((o) => (
           <option key={o} value={o}>
-            {o}
+            {optionLabel ? optionLabel(o) : o}
           </option>
         ))}
       </select>

@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { Eye } from "lucide-react";
-import { specialtiesList } from "@/data/hospitals";
-import { slugifySpecialty } from "@/lib/utils";
+import { serviceLevels } from "@/data/hospitals";
+import { serviceLevelMeta } from "@/lib/utils";
 
 export default function Footer() {
   return (
@@ -10,14 +9,13 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 text-xl font-extrabold">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
-                <Eye size={18} strokeWidth={2.5} />
-              </span>
-              Clarity
+              <img src="/icon.svg" alt="" className="h-9 w-9" />
+              <span className="notranslate">Emergency Eye Care Directory</span>
             </Link>
             <p className="mt-4 max-w-sm text-base font-medium text-white/70">
-              A directory of accredited eye hospitals and specialists, built so
-              patients can find the right care without the guesswork.
+              A UK-wide directory of eye casualty and emergency ophthalmology
+              services, built for clinicians deciding where to refer a
+              patient with an eye emergency
             </p>
           </div>
 
@@ -28,12 +26,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <Link href="/hospitals" className="text-base font-medium text-white/80 hover:text-white">
-                  Hospital Directory
+                  Directory
                 </Link>
               </li>
               <li>
-                <Link href="/specialties" className="text-base font-medium text-white/80 hover:text-white">
-                  Specialties
+                <Link href="/service-levels" className="text-base font-medium text-white/80 hover:text-white">
+                  Service Levels
                 </Link>
               </li>
               <li>
@@ -46,16 +44,16 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-white/50">
-              Top Specialties
+              Service Levels
             </h3>
             <ul className="mt-4 space-y-3">
-              {specialtiesList.slice(0, 4).map((s) => (
-                <li key={s}>
+              {serviceLevels.map((level) => (
+                <li key={level}>
                   <Link
-                    href={`/specialties/${slugifySpecialty(s)}`}
+                    href={`/service-levels/${level}`}
                     className="text-base font-medium text-white/80 hover:text-white"
                   >
-                    {s}
+                    {serviceLevelMeta[level].label}
                   </Link>
                 </li>
               ))}
@@ -64,8 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-sm font-medium text-white/50 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Clarity Eye Directory. All rights reserved.</p>
-          <p>Placeholder data for demonstration purposes only.</p>
+          <p>© {new Date().getFullYear()} Emergency Eye Care Directory. All rights reserved.</p>
         </div>
       </div>
     </footer>

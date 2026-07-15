@@ -11,22 +11,27 @@ const config: Config = {
       colors: {
         ink: "#0A1628",
         primary: {
-          DEFAULT: "#1E4FFF",
-          deep: "#0B2A9E",
-          light: "#6E93FF",
+          DEFAULT: "#1E40AF",
+          deep: "#1E3A8A",
+          light: "#60A5FA",
         },
         sky: "#EAF1FF",
         line: "#D7E3FF",
         "sky-dark": "#101F3D",
         surface: "#16294E",
+        status: {
+          walkin: "#0F9D58",
+          booked: "#F57C00",
+          none: "#64748B",
+        },
       },
       fontFamily: {
         sans: ["var(--font-poppins)"],
       },
       fontSize: {
-        "hero-mobile": ["48px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
-        "hero-desktop": ["112px", { lineHeight: "0.98", letterSpacing: "-0.03em" }],
-        "section-header": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
+        "hero-mobile": ["2.25rem", { lineHeight: "1.08", letterSpacing: "-0.02em" }],
+        "hero-desktop": ["4.5rem", { lineHeight: "1", letterSpacing: "-0.02em" }],
+        "section-header": ["3rem", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
       },
       keyframes: {
         scan: {

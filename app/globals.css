@@ -9,14 +9,27 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 100%;
+    transition: font-size 0.2s ease;
   }
 
   html.dark {
     color-scheme: dark;
   }
 
+  html[data-text-size="large"] {
+    font-size: 115%;
+  }
+
+  html[data-text-size="larger"] {
+    font-size: 130%;
+  }
+
   body {
     @apply bg-white text-ink font-sans antialiased transition-colors duration-300 dark:bg-ink dark:text-white;
+    /* Google Translate injects a banner iframe that pushes body down via an
+       inline top offset; force it back so our sticky header stays put. */
+    top: 0 !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -41,6 +54,7 @@
       scroll-behavior: auto !important;
     }
   }
+
 }
 
 @layer utilities {
@@ -55,4 +69,22 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+/* Suppress Google Translate's default banner/iframe chrome so it doesn't
+   shift the page or clash with our sticky header. */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon,
+iframe.skiptranslate {
+  display: none !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
 }

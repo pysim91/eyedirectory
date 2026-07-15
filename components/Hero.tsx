@@ -5,7 +5,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { VisionScanSweep } from "@/components/VisionScanLine";
-import { specialtiesList } from "@/data/hospitals";
+import { serviceLevels } from "@/data/hospitals";
+import { serviceLevelMeta } from "@/lib/utils";
 
 export default function Hero() {
   const router = useRouter();
@@ -29,7 +30,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-primary dark:text-primary-light"
         >
-          200+ accredited eye hospitals, nationwide
+          UK eye casualty &amp; emergency ophthalmology services
         </motion.p>
 
         <motion.h1
@@ -38,11 +39,11 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.65, 0, 0.35, 1] }}
           className="text-hero-mobile font-extrabold text-ink dark:text-white md:text-hero-desktop"
         >
-          Find eye care
+          Know exactly
           <br />
-          you can see
+          where to send
           <br />
-          <span className="text-primary">clearly</span> through.
+          an eye <span className="text-primary">emergency</span>
         </motion.h1>
 
         <motion.p
@@ -51,8 +52,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-8 max-w-xl text-lg font-medium text-ink/70 dark:text-white/70 md:text-xl"
         >
-          Compare accredited hospitals, specialists, and outcomes side by
-          side. Search by city or condition and book with confidence.
+          A UK-wide reference for GPs, optometrists, and emergency clinicians:
+          walk-in availability, referral routes, and direct contact details
+          for every eye casualty service
         </motion.p>
 
         <motion.form
@@ -60,7 +62,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.65 }}
           onSubmit={handleSearch}
-          className="mt-10 flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-line bg-white p-2 shadow-[0_8px_40px_-16px_rgba(30,79,255,0.25)] dark:border-white/10 dark:bg-surface sm:flex-row"
+          className="mt-10 flex w-full max-w-2xl flex-col gap-3 rounded-2xl border border-line bg-white p-2 shadow-[0_8px_40px_-16px_rgba(30,64,175,0.25)] dark:border-white/10 dark:bg-surface sm:flex-row"
         >
           <div className="relative flex-1">
             <Search
@@ -71,8 +73,8 @@ export default function Hero() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search city or specialty, e.g. Cataract"
-              aria-label="Search hospitals by city or specialty"
+              placeholder="Search by postcode, hospital, city, or region"
+              aria-label="Search hospitals by name, city, region, or UK postcode"
               className="w-full rounded-xl border-none bg-transparent py-3.5 pl-12 pr-4 text-base font-medium text-ink placeholder:text-ink/40 dark:text-white dark:placeholder:text-white/40"
             />
           </div>
@@ -90,14 +92,15 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-6 flex flex-wrap gap-2"
         >
-          {specialtiesList.slice(0, 5).map((s) => (
+          {serviceLevels.map((level) => (
             <button
-              key={s}
+              key={level}
               type="button"
-              onClick={() => router.push(`/hospitals?specialty=${encodeURIComponent(s)}`)}
+              onClick={() => router.push(`/hospitals?serviceLevel=${encodeURIComponent(level)}`)}
               className="tag-pill bg-sky text-sm transition-colors hover:border-primary dark:bg-sky-dark dark:hover:border-primary-light"
             >
-              {s}
+              <span className={`mr-1.5 h-1.5 w-1.5 rounded-full ${serviceLevelMeta[level].dot}`} />
+              {serviceLevelMeta[level].label}
             </button>
           ))}
         </motion.div>

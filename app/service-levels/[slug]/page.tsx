@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { specialtiesList, specialtyCopy, getHospitalsBySpecialty, Specialty } from "@/data/hospitals";
-import { slugifySpecialty } from "@/lib/utils";
+import {
+  serviceLevels,
+  serviceLevelCopy,
+  getHospitalsByServiceLevel,
+  ServiceLevel,
+} from "@/data/hospitals";
+import { serviceLevelMeta } from "@/lib/utils";
 import HospitalCard from "@/components/HospitalCard";
 import { RevealGroup, RevealItem } from "@/components/RevealOnScroll";
 import { ScanDivider } from "@/components/VisionScanLine";
 
-function findSpecialtyBySlug(slug: string): Specialty | undefined {
-  return specialtiesList.find((s) => slugifySpecialty(s) === slug);
+function isServiceLevel(slug: string): slug is ServiceLevel {
+  return (serviceLevels as string[]).includes(slug);
 }
 
 export function generateStaticParams() {
-  return specialtiesList.map((s) => ({ slug: slugifySpecialty(s) }));
+  return serviceLevels.map((level) => ({ slug: level }));
 }
 
 export function generateMetadata({
@@ -20,42 +25,45 @@ export function generateMetadata({
 }: {
   params: { slug: string };
 }): Metadata {
-  const specialty = findSpecialtyBySlug(params.slug);
-  if (!specialty) return {};
+  if (!isServiceLevel(params.slug)) return {};
   return {
-    title: `${specialty} | Clarity`,
-    description: specialtyCopy[specialty].description,
+    title: `${serviceLevelMeta[params.slug].label} | Emergency Eye Care Directory`,
+    description: serviceLevelCopy[params.slug].description,
   };
 }
 
-export default function SpecialtyDetailPage({
+export default function ServiceLevelDetailPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const specialty = findSpecialtyBySlug(params.slug);
-  if (!specialty) notFound();
+  if (!isServiceLevel(params.slug)) notFound();
 
-  const copy = specialtyCopy[specialty];
-  const hospitalsWithSpecialty = getHospitalsBySpecialty(specialty);
+  const level = params.slug;
+  const meta = serviceLevelMeta[level];
+  const copy = serviceLevelCopy[level];
+  const hospitalsAtLevel = getHospitalsByServiceLevel(level);
 
   return (
     <div>
       <div className="border-b border-line bg-sky px-6 py-16 dark:border-white/10 dark:bg-sky-dark">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-wrap items-center gap-2 text-sm font-bold text-ink/50 dark:text-white/50">
-            <Link href="/specialties" className="hover:text-primary dark:hover:text-primary-light">
-              Specialties
+            <Link href="/service-levels" className="hover:text-primary dark:hover:text-primary-light">
+              Service Levels
             </Link>
             <span>/</span>
-            <span>{specialty}</span>
+            <span>{meta.label}</span>
           </div>
-          <h1 className="mt-6 text-section-header font-extrabold text-ink dark:text-white">
-            {specialty}
-          </h1>
-          <p className="mt-3 max-w-2xl text-xl font-medium text-ink/70 dark:text-white/70">
+          <div
+            className={`mt-6 inline-flex w-fit items-center gap-1.5 rounded-full border px-3 py-1 text-sm font-bold ${meta.badge}`}
+          >
+            <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
+            {meta.label}
+          </div>
+          <h1 className="mt-4 text-section-header font-extrabold text-ink dark:text-white">
             {copy.tagline}
-          </p>
+          </h1>
         </div>
       </div>
 
@@ -73,11 +81,11 @@ export default function SpecialtyDetailPage({
         <RevealGroup className="mt-16">
           <RevealItem>
             <h2 className="text-2xl font-extrabold text-ink dark:text-white">
-              Hospitals offering {specialty}
+              {hospitalsAtLevel.length} {hospitalsAtLevel.length === 1 ? "service" : "services"} with this designation
             </h2>
           </RevealItem>
           <RevealItem className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {hospitalsWithSpecialty.map((h) => (
+            {hospitalsAtLevel.map((h) => (
               <HospitalCard key={h.slug} hospital={h} />
             ))}
           </RevealItem>
