@@ -6,11 +6,12 @@ export const metadata: Metadata = {
   description: "Search and filter UK eye casualty and emergency ophthalmology services by service level, city, region, or postcode.",
 };
 
-export default function HospitalsPage({
+export default async function HospitalsPage({
   searchParams,
 }: {
-  searchParams: { q?: string; serviceLevel?: string };
+  searchParams: Promise<{ q?: string; serviceLevel?: string }>;
 }) {
+  const resolvedSearchParams = await searchParams;
   return (
     <div>
       <div className="border-b border-line bg-sky px-6 py-16 dark:border-white/10 dark:bg-sky-dark">
@@ -25,8 +26,8 @@ export default function HospitalsPage({
         </div>
       </div>
       <DirectoryExplorer
-        initialQuery={searchParams.q ?? ""}
-        initialServiceLevel={searchParams.serviceLevel ?? "All"}
+        initialQuery={resolvedSearchParams.q ?? ""}
+        initialServiceLevel={resolvedSearchParams.serviceLevel ?? "All"}
       />
     </div>
   );

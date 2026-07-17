@@ -20,26 +20,28 @@ export function generateStaticParams() {
   return serviceLevels.map((level) => ({ slug: level }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  if (!isServiceLevel(params.slug)) return {};
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  if (!isServiceLevel(slug)) return {};
   return {
-    title: `${serviceLevelMeta[params.slug].label} | Emergency Eye Care Directory`,
-    description: serviceLevelCopy[params.slug].description,
+    title: `${serviceLevelMeta[slug].label} | Emergency Eye Care Directory`,
+    description: serviceLevelCopy[slug].description,
   };
 }
 
-export default function ServiceLevelDetailPage({
+export default async function ServiceLevelDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  if (!isServiceLevel(params.slug)) notFound();
+  const { slug } = await params;
+  if (!isServiceLevel(slug)) notFound();
 
-  const level = params.slug;
+  const level = slug;
   const meta = serviceLevelMeta[level];
   const copy = serviceLevelCopy[level];
   const hospitalsAtLevel = getHospitalsByServiceLevel(level);

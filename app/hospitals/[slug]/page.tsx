@@ -11,12 +11,13 @@ export function generateStaticParams() {
   return hospitals.map((h) => ({ slug: h.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const hospital = getHospitalBySlug(params.slug);
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const hospital = getHospitalBySlug(slug);
   if (!hospital) return {};
   return {
     title: `${hospital.name} | Emergency Eye Care Directory`,
@@ -24,12 +25,13 @@ export function generateMetadata({
   };
 }
 
-export default function HospitalDetailPage({
+export default async function HospitalDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const hospital = getHospitalBySlug(params.slug);
+  const { slug } = await params;
+  const hospital = getHospitalBySlug(slug);
   if (!hospital) notFound();
 
   const meta = serviceLevelMeta[hospital.serviceLevel];
