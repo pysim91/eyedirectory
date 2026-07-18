@@ -29,6 +29,11 @@ const translateInitScript = `
   })();
 `;
 
+const plausibleInitScript = `
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+`;
+
 const themeInitScript = `
   (function () {
     try {
@@ -68,6 +73,14 @@ export default function RootLayout({
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
           {themeInitScript}
+        </Script>
+        <Script
+          async
+          src="https://plausible.io/js/pa-HN1U-3TvsxhFkU_SoJtyV.js"
+          strategy="afterInteractive"
+        />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {plausibleInitScript}
         </Script>
       </head>
       <body className="flex min-h-screen flex-col">
