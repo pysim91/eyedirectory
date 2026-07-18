@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Search, SlidersHorizontal, MapPin, Loader2 } from "lucide-react";
+import { Search, SlidersHorizontal, MapPin, Loader2, Check } from "lucide-react";
 import { hospitals, serviceLevels, regions } from "@/data/hospitals";
-import type { ServiceLevel } from "@/data/hospitals";
 import {
   serviceLevelMeta,
   looksLikeUKPostcode,
@@ -23,12 +22,22 @@ export default function DirectoryExplorer({
   initialServiceLevel?: string;
 }) {
   const [query, setQuery] = useState(initialQuery);
-  const [serviceLevel, setServiceLevel] = useState<string>(initialServiceLevel);
+  const [serviceLevelFilter, setServiceLevelFilter] = useState<string[]>(
+    initialServiceLevel !== "All" ? [initialServiceLevel] : ["walk-in", "booked"]
+  );
   const [region, setRegion] = useState<string>("All");
   const [filtersOpen, setFiltersOpen] = useState(initialServiceLevel !== "All");
   const [postcodeCoords, setPostcodeCoords] = useState<{ lat: number; lon: number } | null>(null);
   const [postcodeStatus, setPostcodeStatus] = useState<PostcodeStatus>("idle");
   const requestId = useRef(0);
+
+  function toggleServiceLevel(level: string) {
+    setServiceLevelFilter((current) =>
+      current.includes(level)
+        ? current.filter((l) => l !== level)
+        : [...current, level]
+    );
+  }
 
   useEffect(() => {
     const trimmed = query.trim();
@@ -67,7 +76,8 @@ export default function DirectoryExplorer({
           h.city.toLowerCase().includes(q) ||
           h.region.toLowerCase().includes(q);
         const matchesServiceLevel =
-          serviceLevel === "All" || h.serviceLevel === serviceLevel;
+          serviceLevelFilter.length === 0 ||
+          serviceLevelFilter.includes(h.serviceLevel);
         const matchesRegion = region === "All" || h.region === region;
         return matchesQuery && matchesServiceLevel && matchesRegion;
       })
@@ -83,7 +93,7 @@ export default function DirectoryExplorer({
     }
 
     return base;
-  }, [query, serviceLevel, region, postcodeCoords]);
+  }, [query, serviceLevelFilter, region, postcodeCoords]);
 
   return (
     <div>
@@ -143,16 +153,38 @@ export default function DirectoryExplorer({
                 transition={{ duration: 0.3, ease: [0.65, 0, 0.35, 1] }}
                 className="overflow-hidden"
               >
-                <div className="grid gap-3 pb-1 sm:grid-cols-2">
-                  <FilterSelect
-                    label="Service level"
-                    value={serviceLevel}
-                    onChange={setServiceLevel}
-                    options={["All", ...serviceLevels]}
-                    optionLabel={(o) =>
-                      o === "All" ? "All" : serviceLevelMeta[o as ServiceLevel].label
-                    }
-                  />
+                <div className="grid gap-4 pb-1 sm:grid-cols-2">
+                  <div className="flex flex-col gap-1.5">
+                    <span className="text-xs font-bold uppercase tracking-wider text-ink/50 dark:text-white/50">
+                      Service level
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {serviceLevels.map((level) => {
+                        const meta = serviceLevelMeta[level];
+                        const active = serviceLevelFilter.includes(level);
+                        return (
+                          <button
+                            key={level}
+                            type="button"
+                            onClick={() => toggleServiceLevel(level)}
+                            aria-pressed={active}
+                            className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-bold transition-colors ${
+                              active
+                                ? "border-primary bg-primary/10 text-primary dark:border-primary-light dark:bg-primary-light/10 dark:text-primary-light"
+                                : "border-line text-ink hover:border-primary dark:border-white/10 dark:text-white dark:hover:border-primary-light"
+                            }`}
+                          >
+                            {active ? (
+                              <Check size={13} />
+                            ) : (
+                              <span className={`h-1.5 w-1.5 rounded-full ${meta.dot}`} />
+                            )}
+                            {meta.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
                   <FilterSelect
                     label="Region"
                     value={region}
