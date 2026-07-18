@@ -14,6 +14,8 @@ import HospitalCard from "@/components/HospitalCard";
 
 type PostcodeStatus = "idle" | "loading" | "found" | "notfound";
 
+const PAGE_SIZE = 20;
+
 export default function DirectoryExplorer({
   initialQuery = "",
   initialServiceLevel = "All",
@@ -29,6 +31,7 @@ export default function DirectoryExplorer({
   const [filtersOpen, setFiltersOpen] = useState(initialServiceLevel !== "All");
   const [postcodeCoords, setPostcodeCoords] = useState<{ lat: number; lon: number } | null>(null);
   const [postcodeStatus, setPostcodeStatus] = useState<PostcodeStatus>("idle");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const requestId = useRef(0);
 
   function toggleServiceLevel(level: string) {
@@ -94,6 +97,13 @@ export default function DirectoryExplorer({
 
     return base;
   }, [query, serviceLevelFilter, region, postcodeCoords]);
+
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [query, serviceLevelFilter, region, postcodeCoords]);
+
+  const visible = filtered.slice(0, visibleCount);
+  const hasMore = filtered.length > visibleCount;
 
   return (
     <div>
@@ -200,7 +210,9 @@ export default function DirectoryExplorer({
 
       <div className="mx-auto max-w-7xl px-6 py-10">
         <p className="mb-6 text-sm font-bold uppercase tracking-wider text-ink/50 dark:text-white/50">
-          {filtered.length} {filtered.length === 1 ? "service" : "services"} found
+          Showing {visible.length} of {filtered.length}{" "}
+          {filtered.length === 1 ? "service" : "services"}
+          {postcodeCoords && visible.length < filtered.length ? " (nearest first)" : ""}
         </p>
 
         <motion.div
@@ -208,7 +220,7 @@ export default function DirectoryExplorer({
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           <AnimatePresence mode="popLayout">
-            {filtered.map((h) => (
+            {visible.map((h) => (
               <motion.div
                 key={h.slug}
                 layout
@@ -222,6 +234,18 @@ export default function DirectoryExplorer({
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {hasMore && (
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+              className="rounded-full border border-line px-6 py-3 text-base font-bold text-ink transition-colors hover:border-primary dark:border-white/10 dark:text-white dark:hover:border-primary-light"
+            >
+              Load {Math.min(PAGE_SIZE, filtered.length - visibleCount)} more
+            </button>
+          </div>
+        )}
 
         {filtered.length === 0 && (
           <div className="rounded-2xl border border-dashed border-line py-20 text-center dark:border-white/10">
