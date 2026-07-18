@@ -5,30 +5,6 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const translateInitScript = `
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'ar,zh-CN,nl,en,fr,de,it,pl,pt,es',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-      autoDisplay: false,
-    }, 'google_translate_element');
-  }
-
-  (function () {
-    var originalRemoveChild = Node.prototype.removeChild;
-    Node.prototype.removeChild = function (child) {
-      if (child.parentNode !== this) return child;
-      return originalRemoveChild.apply(this, arguments);
-    };
-    var originalInsertBefore = Node.prototype.insertBefore;
-    Node.prototype.insertBefore = function (newNode, referenceNode) {
-      if (referenceNode && referenceNode.parentNode !== this) return newNode;
-      return originalInsertBefore.apply(this, arguments);
-    };
-  })();
-`;
-
 const plausibleInitScript = `
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
   plausible.init()
@@ -85,13 +61,6 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col">
         <div id="google_translate_element" className="notranslate hidden" />
-        <Script id="translate-init" strategy="afterInteractive">
-          {translateInitScript}
-        </Script>
-        <Script
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          strategy="afterInteractive"
-        />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

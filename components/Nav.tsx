@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Info } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -40,9 +41,12 @@ export default function Nav() {
       </div>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div className="flex min-w-0 flex-1 items-center gap-3 xl:flex-none">
-          <img
+          <Image
             src="/nhs-logo.png"
             alt="NHS"
+            width={380}
+            height={182}
+            priority
             className="notranslate hidden h-7 w-auto shrink-0 rounded-sm sm:block"
           />
           <Link
@@ -97,9 +101,11 @@ export default function Nav() {
       {open && (
         <div className="border-t border-line bg-white px-6 py-4 dark:border-white/10 dark:bg-ink xl:hidden">
           <div className="flex flex-col gap-4">
-            <img
+            <Image
               src="/nhs-logo.png"
               alt="NHS"
+              width={380}
+              height={182}
               className="notranslate h-7 w-auto self-start rounded-sm sm:hidden"
             />
             <Link
