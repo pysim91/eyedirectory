@@ -28,7 +28,7 @@ export const hospitals: Hospital[] = [
 
 24 hours advice line for clinicians
 
-Please telephone to discuss whether referral appropriate - if patients require systemic work-up including MRI facilities, would be more suitable for a general hospital`,
+GPs and optometrists to ALWAYS call and discuss whether referral appropriate - if patients require systemic work-up including MRI facilities, then this would be more suitable for a general hospital`,
     telephone: `020 7521 4682 (ONLY for eye care professionals referring to A&E)`,
     email: `moorfields.aeadmin@nhs.net`,
   },
@@ -3072,25 +3072,28 @@ St George’s switchboard number 02086721255 - bleep 6768 (Healthcare profession
 
 export const serviceLevelCopy: Record<
   ServiceLevel,
-  { label: string; tagline: string; description: string }
+  { label: string; tagline: string; description: string | string[] }
 > = {
   "walk-in": {
     label: "Walk-in eye casualty",
     tagline: "Patients can be seen without a booked appointment",
     description:
-      "This site runs its own walk-in eye casualty during the hours listed on its entry Hours and cover vary considerably by site, so confirm current cover before sending a patient, particularly outside core daytime hours",
+      "These sites run their own walk-in eye casualty during their listed hours. Hours and cover vary considerably by site, so please confirm current cover before sending a patient, particularly outside core daytime hours.",
   },
   booked: {
     label: "Booked emergency clinic",
     tagline: "Referral and booking required before a patient is seen",
-    description:
-      "This site does not accept walk-in patients for eye emergencies A referral must be arranged in advance, typically by phone or email to the on-call ophthalmology team — see the contact details and referral instructions on each listing",
+    description: [
+      "These sites do not accept walk-in patients for eye emergencies",
+      "A referral must be arranged in advance, typically by phone or email to the on-call ophthalmology team — see the contact details and referral instructions on each listing",
+      "For out of hours, please 1) advise patients to attend their local A&E department or 2) contact any pre-agreed covering eye unit (if applicable)",
+    ],
   },
   none: {
     label: "No emergency eye service",
     tagline: "This site does not run its own emergency eye service",
     description:
-      "There is no dedicated eye casualty or emergency ophthalmology cover at this site Patients should be redirected to the nearest walk-in or booked-referral service instead",
+      "There is no dedicated eye casualty or emergency ophthalmology cover at these sites. Patients should be redirected to the nearest walk-in or booked-referral service instead",
   },
 };
 

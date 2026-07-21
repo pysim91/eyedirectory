@@ -27,9 +27,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   if (!isServiceLevel(slug)) return {};
+  const { description } = serviceLevelCopy[slug];
   return {
     title: `${serviceLevelMeta[slug].label} | Emergency Eye Care Directory`,
-    description: serviceLevelCopy[slug].description,
+    description: Array.isArray(description) ? description.join(" ") : description,
   };
 }
 
@@ -72,9 +73,20 @@ export default async function ServiceLevelDetailPage({
       <section className="mx-auto max-w-6xl px-6 py-16">
         <RevealGroup>
           <RevealItem>
-            <p className="max-w-3xl text-lg font-medium leading-relaxed text-ink/70 dark:text-white/70">
-              {copy.description}
-            </p>
+            {Array.isArray(copy.description) ? (
+              <ul className="max-w-3xl space-y-2 text-lg font-medium leading-relaxed text-ink/70 dark:text-white/70">
+                {copy.description.map((line, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-primary dark:text-primary-light">•</span>
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="max-w-3xl text-lg font-medium leading-relaxed text-ink/70 dark:text-white/70">
+                {copy.description}
+              </p>
+            )}
           </RevealItem>
         </RevealGroup>
 
