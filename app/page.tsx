@@ -106,7 +106,7 @@ export default function HomePage() {
                 Data adapted from the UK Eye Casualty Services map,
                 originally created by Jonathan Than (Consultant
                 Ophthalmologist at Milton Keynes NHS Foundation Trust) and
-                maintained by Ayesha Karimi (ST6 Ophthalmology Resident -
+                maintained by Ayesha Karimi (ST7 Ophthalmology Resident -
                 Kent, Surrey, Sussex Deanery)
               </li>
               <li className="flex gap-2">
