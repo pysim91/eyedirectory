@@ -19,9 +19,15 @@ export async function generateMetadata({
   const { slug } = await params;
   const hospital = getHospitalBySlug(slug);
   if (!hospital) return {};
+  const title = `${hospital.name} | Emergency Eye Care Directory`;
+  const description = `${serviceLevelMeta[hospital.serviceLevel].label} in ${hospital.city}, ${hospital.region}.`;
+  const url = `/hospitals/${slug}`;
   return {
-    title: `${hospital.name} | Emergency Eye Care Directory`,
-    description: `${serviceLevelMeta[hospital.serviceLevel].label} in ${hospital.city}, ${hospital.region}.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, images: ["/opengraph-image"] },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -37,8 +43,31 @@ export default async function HospitalDetailPage({
   const meta = serviceLevelMeta[hospital.serviceLevel];
   const mapsUrl = `https://www.google.com/maps?q=${hospital.lat},${hospital.lon}`;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    name: hospital.name,
+    url: `https://emergency-eyecare.co.uk/hospitals/${hospital.slug}`,
+    medicalSpecialty: "Ophthalmic",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: hospital.city,
+      addressRegion: hospital.region,
+      addressCountry: hospital.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: hospital.lat,
+      longitude: hospital.lon,
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="border-b border-line bg-sky px-6 py-16 dark:border-white/10 dark:bg-sky-dark">
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-wrap items-center gap-2 text-sm font-bold text-ink/50 dark:text-white/50">

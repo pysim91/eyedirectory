@@ -4,9 +4,15 @@ import { serviceLevels, serviceLevelCopy, getHospitalsByServiceLevel } from "@/d
 import { serviceLevelMeta } from "@/lib/utils";
 import { RevealGroup, RevealItem } from "@/components/RevealOnScroll";
 
+const TITLE = "Service Levels | Emergency Eye Care Directory";
+const DESCRIPTION = "What walk-in, booked, and no-service eye casualty designations mean for a referral.";
+
 export const metadata: Metadata = {
-  title: "Service Levels | Emergency Eye Care Directory",
-  description: "What walk-in, booked, and no-service eye casualty designations mean for a referral.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/service-levels" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/service-levels", images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 
 export default function ServiceLevelsPage() {

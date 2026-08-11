@@ -33,10 +33,28 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const SITE_URL = "https://emergency-eyecare.co.uk";
+const SITE_TITLE = "Emergency Eye Care Directory | UK Eye Casualty & Ophthalmology Services";
+const SITE_DESCRIPTION =
+  "A UK-wide directory of eye casualty and emergency ophthalmology services for clinicians. Search by hospital, city, or region and check walk-in, booked-referral, or no-service status before referring.";
+
 export const metadata: Metadata = {
-  title: "Emergency Eye Care Directory | UK Eye Casualty & Ophthalmology Services",
-  description:
-    "A UK-wide directory of eye casualty and emergency ophthalmology services for clinicians. Search by hospital, city, or region and check walk-in, booked-referral, or no-service status before referring.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "Emergency Eye Care Directory",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({

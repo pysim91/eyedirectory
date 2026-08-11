@@ -5,9 +5,15 @@ import { RevealGroup, RevealItem } from "@/components/RevealOnScroll";
 
 const CONTACT_EMAIL = "enquiries@emergency-eyecare.co.uk";
 
+const TITLE = "Contact | Emergency Eye Care Directory";
+const DESCRIPTION = "Questions or corrections about the UK eye casualty directory? Get in touch.";
+
 export const metadata: Metadata = {
-  title: "Contact | Emergency Eye Care Directory",
-  description: "Questions or corrections about the UK eye casualty directory? Get in touch.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/contact" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/contact", images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 
 export default function ContactPage() {

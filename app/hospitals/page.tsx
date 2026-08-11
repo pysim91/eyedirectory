@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import DirectoryExplorer from "@/components/DirectoryExplorer";
 
+const TITLE = "Directory | Emergency Eye Care Directory";
+const DESCRIPTION =
+  "Search and filter UK eye casualty and emergency ophthalmology services by service level, city, region, or postcode.";
+
 export const metadata: Metadata = {
-  title: "Directory | Emergency Eye Care Directory",
-  description: "Search and filter UK eye casualty and emergency ophthalmology services by service level, city, region, or postcode.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/hospitals" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "/hospitals", images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 
 export default async function HospitalsPage({

@@ -27,10 +27,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   if (!isServiceLevel(slug)) return {};
-  const { description } = serviceLevelCopy[slug];
+  const { description: rawDescription } = serviceLevelCopy[slug];
+  const title = `${serviceLevelMeta[slug].label} | Emergency Eye Care Directory`;
+  const description = Array.isArray(rawDescription) ? rawDescription.join(" ") : rawDescription;
+  const url = `/service-levels/${slug}`;
   return {
-    title: `${serviceLevelMeta[slug].label} | Emergency Eye Care Directory`,
-    description: Array.isArray(description) ? description.join(" ") : description,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, images: ["/opengraph-image"] },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

@@ -24,6 +24,20 @@ const steps = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Emergency Eye Care Directory",
+  url: "https://emergency-eyecare.co.uk",
+  description:
+    "A UK-wide directory of eye casualty and emergency ophthalmology services for clinicians.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://emergency-eyecare.co.uk/hospitals?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function HomePage() {
   const countsByLevel = Object.fromEntries(
     serviceLevels.map((l) => [l, getHospitalsByServiceLevel(l).length])
@@ -31,6 +45,10 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Hero />
 
       <ScanDivider />
