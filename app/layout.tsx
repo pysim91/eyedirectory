@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import HealthcareGate from "@/components/HealthcareGate";
 
 const plausibleInitScript = `
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
@@ -79,6 +80,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col">
         <div id="google_translate_element" className="notranslate hidden" />
+        <HealthcareGate />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
