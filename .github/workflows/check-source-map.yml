@@ -1,0 +1,80 @@
+name: Weekly source map check
+
+on:
+  schedule:
+    # Every Monday at 07:00 UTC (8am UK during BST, 7am during GMT)
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check source map for changes
+        id: check
+        run: |
+          set +e
+          python3 scripts/check_source_map.py > report.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat report.txt
+
+      - name: Open issue if changes found
+        if: steps.check.outputs.exit_code == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.txt', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Source map changes detected - ${today}`,
+              body: [
+                'The weekly automated check found differences between the UK Eye Casualty Services source map and the last-reviewed snapshot.',
+                '',
+                'Review these and decide what to apply to `data/hospitals.ts`. Note that some entries there have been intentionally hand-edited and may differ from the source map on purpose.',
+                '',
+                'After applying changes, re-baseline with:',
+                '```',
+                'python3 scripts/check_source_map.py --save-baseline',
+                '```',
+                '',
+                '---',
+                '',
+                '```',
+                report.trim(),
+                '```',
+              ].join('\n'),
+            });
+
+      - name: Open issue if check failed
+        if: steps.check.outputs.exit_code != '0' && steps.check.outputs.exit_code != '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.txt', 'utf8');
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Source map check failed to run - ${today}`,
+              body: [
+                'The weekly automated check could not complete, so no comparison was made this week.',
+                '',
+                '```',
+                report.trim(),
+                '```',
+              ].join('\n'),
+            });
