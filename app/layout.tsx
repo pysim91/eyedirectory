@@ -6,11 +6,6 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HealthcareGate from "@/components/HealthcareGate";
 
-const plausibleInitScript = `
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-`;
-
 const themeInitScript = `
   (function () {
     try {
@@ -70,13 +65,10 @@ export default function RootLayout({
           {themeInitScript}
         </Script>
         <Script
-          async
-          src="https://plausible.io/js/pa-HN1U-3TvsxhFkU_SoJtyV.js"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "638e17bf837b4173b7e52a23d4345fda"}'
           strategy="afterInteractive"
         />
-        <Script id="plausible-init" strategy="afterInteractive">
-          {plausibleInitScript}
-        </Script>
       </head>
       <body className="flex min-h-screen flex-col">
         <div id="google_translate_element" className="notranslate hidden" />
