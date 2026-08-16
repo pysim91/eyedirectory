@@ -1,0 +1,1919 @@
+{
+  "Abergele Hospital|53.2662|-3.5805": {
+    "cover": "Eye Casualty\u00a0Mon-Fri 9am-4pm",
+    "email": "Pamela.S.Mariette@wales.nhs.uk (confirmed twice)",
+    "lat": 53.2662156,
+    "lon": -3.5804798,
+    "name": "Abergele Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01745 583910 + ask for Ophthal on-call"
+  },
+  "Addenbrooke's Hospital|52.1751|0.1407": {
+    "cover": "Clinic 14\nIn hours - emergency eye clinics 08:30-18:00 Mon-fri, overnight - on call service",
+    "email": "add-tr.emergencyeye@nhs.net\n\n\"The .net account is checked regularly between 9.00 and 16.00 Monday to Friday - If you feel that your referral is too urgent then please contact the On-call Ophthalmologist via Addenbrooke's switchboard on 01223 805000.\n\nAll AMD referrals are sent directly to the AMD service and not booked or arranged through the emergency clinic. (add-tr.amd@nhs.net)\n\nIf you are sending photographs then please ensure they are sent as attachments rather than within the body of the email.\"",
+    "lat": 52.1751006,
+    "lon": 0.140727500000025,
+    "name": "Addenbrooke's Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switch 01223245151 for on-call doctor"
+  },
+  "Aintree University Hospital|53.4657|-2.9334": {
+    "cover": "OARS\u00a09am-4pm Mon- Fri",
+    "email": "",
+    "lat": 53.4656802,
+    "lon": -2.933433,
+    "name": "Aintree University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0151 5290186"
+  },
+  "Alder Hey Children's Hospital|53.4183|-2.896": {
+    "cover": "Alder Hey Ophthalmology\u00a009:00-17:00 Mon to Fri",
+    "email": "",
+    "lat": 53.4182748,
+    "lon": -2.8960327,
+    "name": "Alder Hey Children's Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0151 228 3196 or 0151 228 3709\n\nCall 0151 228 4811 (the main switchobard)"
+  },
+  "Altnagelvin Hospital|54.9861|-7.2908": {
+    "cover": "Mon Fri 9-5 eye casualty booked appointments and out of hours on call",
+    "email": "",
+    "lat": 54.9861213,
+    "lon": -7.2907557,
+    "name": "Altnagelvin Hospital",
+    "serviceLevel": "booked",
+    "telephone": "2871345171(213429)"
+  },
+  "Arrowe Park Hospital|53.3698|-3.0953": {
+    "cover": "Eye Casualty\u00a08.30-4pm Mon-Fri",
+    "email": "wih-tr.wirralemergencyeyecare@nhs.net\n\nThis email is manned between 08.30 and 16:15, Monday to Friday ,outside these hours, please refer to on-call Ophthalmologists through A&E or contact through hospital switchboard 0151 67851111",
+    "lat": 53.369813,
+    "lon": -3.0953283,
+    "name": "Arrowe Park Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0151 5521830"
+  },
+  "Arundel & District Hospital|50.8545|-0.5654": {
+    "cover": "No eye emergency cover",
+    "email": "",
+    "lat": 50.8544675,
+    "lon": -0.5653945,
+    "name": "Arundel & District Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Ashford Hospital|51.4441|-0.473": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service SHARED WITH ST PETER'S HOSPITAL AND ROYAL SURREY COUNTY HOSPITAL",
+    "email": "asp-tr.eye.casualty.referrals@nhs.net",
+    "lat": 51.444057,
+    "lon": -0.472998,
+    "name": "Ashford Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Barnet Hospital|51.6504|-0.2146": {
+    "cover": "Ophthalmology services.\u00a0Part of Royal Free London NHS Foundation Trust - can be referred to Royal Free or North Middlesex University Hospital",
+    "email": "",
+    "lat": 51.6504237,
+    "lon": -0.2146381,
+    "name": "Barnet Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Barnsley Hospital|53.5585|-1.4992": {
+    "cover": "Eye Clinic\u00a009:30 - 17:30",
+    "email": "bhnftophthalmology.handover@nhs.net",
+    "lat": 53.5585348,
+    "lon": -1.4992344,
+    "name": "Barnsley Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01226434343"
+  },
+  "Basingstoke and North Hampshire Hospital|51.2802|-1.1111": {
+    "cover": "Emergency eye clinic at Basingstoke and North Hampshire Hospital\u00a0Just afternoon 13:50-17:00, 12 slots",
+    "email": "Emergencyeyes@hhst.nhs.uk",
+    "lat": 51.2802038,
+    "lon": -1.1110703,
+    "name": "Basingstoke and North Hampshire Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Beckenham Beacon|51.405|-0.0337": {
+    "cover": "Urgent treatment centre, no ophthalmology",
+    "email": "",
+    "lat": 51.4050226,
+    "lon": -0.0336736,
+    "name": "Beckenham Beacon",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Bedford Hospital|52.1287|-0.4732": {
+    "cover": "09:00-16:00 Mon-Fri. Out of hours on call ophthalmology cover shared with Luton and Dunstable Hospital and Milton Keynes University Hospital. 1st on call until 21:00 then consultant on call thereafter.",
+    "email": "moorfields.bedfordacutereferrals@nhs.net",
+    "lat": 52.1286828,
+    "lon": -0.47322280000003,
+    "name": "Bedford Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01234 355 122"
+  },
+  "Bexhill Hospital|50.8511|0.4761": {
+    "cover": "On call covered by Eastbourne Hospital",
+    "email": "Esht.eyeemergencies@nhs.net",
+    "lat": 50.8511156,
+    "lon": 0.4760624,
+    "name": "Bexhill Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Birmingham & Midland Eye Centre|52.4899|-1.9291": {
+    "cover": "Walk in casualty 9am - 7pm, overnight on call service",
+    "email": "",
+    "lat": 52.4899412,
+    "lon": -1.9290669,
+    "name": "Birmingham & Midland Eye Centre",
+    "serviceLevel": "walk-in",
+    "telephone": "0121 507 4440"
+  },
+  "Blackpool Victoria Hospital|53.8202|-3.0127": {
+    "cover": "Ophthalmic Surgical Unit 01253 957421.\u00a0OSU Mon-Fri 0800-1700",
+    "email": "bfwh.eyecliniccr@nhs.net",
+    "lat": 53.8201558,
+    "lon": -3.0127111,
+    "name": "Blackpool Victoria Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Bognor Regis War Memorial Hospital|50.7931|-0.6759": {
+    "cover": "No eye emergency cover",
+    "email": "",
+    "lat": 50.7930814,
+    "lon": -0.6758925,
+    "name": "Bognor Regis War Memorial Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Bradford Royal Infirmary|53.8065|-1.7965": {
+    "cover": "Eye Casualty Department\u00a09:00- 12:00 and 13:00-16:30",
+    "email": "",
+    "lat": 53.8064886,
+    "lon": -1.7964765,
+    "name": "Bradford Royal Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01274364113"
+  },
+  "Bristol Eye Hospital|51.4585|-2.5944": {
+    "cover": "Walk in Eye ED 8:30am-4:30pm. Overnight on call service via switchboard on 0117 342100\n\nTriaged by ophthalmic nurse in hours and on call doctor out of hours",
+    "email": "",
+    "lat": 51.458458,
+    "lon": -2.5943707,
+    "name": "Bristol Eye Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "01173429091"
+  },
+  "Broomfield Hospital|51.7745|0.4667": {
+    "cover": "09:00-17:00 Mon-Fri\n24 hours via referral\nNote that Attend Anywhere service available covering Mid and South Essex NHS Foundation Trust at https://www.mse.nhs.uk/attendanywhere/\n\nOphthal nurse on-call 0900-1800, Doctor on-call thereafter",
+    "email": "mse.emergency.eyeclinic@nhs.net",
+    "lat": 51.7744639,
+    "lon": 0.466749199999981,
+    "name": "Broomfield Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switch 03004430001 for eye clinic nurse on-call"
+  },
+  "Buckland Hospital|51.1313|1.2906": {
+    "cover": "On call covered by William Harvey Hospital",
+    "email": "ekhuft.urgenteye@nhs.net",
+    "lat": 51.1313296,
+    "lon": 1.2905925,
+    "name": "Buckland Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Burnley General Teaching Hospital|53.8104|-2.2279": {
+    "cover": "Urgent Eye Clinic\u00a09-5.30 Mon-Fri",
+    "email": "",
+    "lat": 53.8104237,
+    "lon": -2.2278788,
+    "name": "Burnley General Teaching Hospital",
+    "serviceLevel": "booked",
+    "telephone": "switchboard ext 14201"
+  },
+  "Calderdale Royal Hospital|53.7054|-1.8576": {
+    "cover": "Eye Clinic\u00a08:00 - 17:00",
+    "email": "eye.referrals@cht.nhs.uk",
+    "lat": 53.70542,
+    "lon": -1.8576207,
+    "name": "Calderdale Royal Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01484355085"
+  },
+  "Central Middlesex Hospital|51.531|-0.2687": {
+    "cover": "09:00-17:00 Mon-Fri. Please refer via email (preferred)/phone before sending patients.\u00a0\n\nOut of hours by Western Eye",
+    "email": "LNWH-tr.centraleye@nhs.net",
+    "lat": 51.530965,
+    "lon": -0.268675700000017,
+    "name": "Central Middlesex Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 8963 7195\n\n020 8453 2165\n020 8453 2166"
+  },
+  "Charing Cross Hospital|51.487|-0.2208": {
+    "cover": "09:00-17:00 Mon-Fri (informal clinic arrangement). Out of hours covered by Western Eye Hospital",
+    "email": "",
+    "lat": 51.4870272,
+    "lon": -0.220757300000059,
+    "name": "Charing Cross Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 3311 1234 (switchboard)"
+  },
+  "Chase Farm Hospital|51.667|-0.1035": {
+    "cover": "Some ophthalmology services. No ocular trauma. Part of Royal Free London NHS Foundation Trust - can be referred to Royal Free or North Middlesex University Hospital",
+    "email": "",
+    "lat": 51.6670427,
+    "lon": -0.1035232,
+    "name": "Chase Farm Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Chelsea and Westminster Hospital|51.485|-0.1824": {
+    "cover": "09:00-17:00 Mon-Fri.\u00a0To contact the eye department first before sending a patient to the clinic. Covered by Western Eye Hospital out of hours",
+    "email": "Chelwest.cwophthalmologyadmin@nhs.net",
+    "lat": 51.4849533,
+    "lon": -0.182401000000027,
+    "name": "Chelsea and Westminster Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0203 315 8000 (switchboard)\nEye clinic extension: 54206"
+  },
+  "Cheltenham General Hospital|51.8926|-2.0719": {
+    "cover": "Shared with Gloucester",
+    "email": "",
+    "lat": 51.8926005,
+    "lon": -2.0718572,
+    "name": "Cheltenham General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "03004223578, Option 1 for triage nurse from 0900-1800. Out of hours for doctor on call"
+  },
+  "Chorley and South Ribble Hospital|53.6655|-2.6358": {
+    "cover": "Lancashire Eye Clinic\u00a08-5.30 Mon-Fri",
+    "email": "eye.emergencies@lthtr.nhs.uk\n\nLancashire Eye Centre - Referrals to this email address are only for patients to be seen within two weeks.\n\nThis email address is only checked throughout the working day between 9am and 5pm Monday - Friday, if you feel that your referral is urgent and needs to be actioned outside of these hours then you can speak to the on call Ophthalmologist via either of our switchboard telephone numbers - 01257 261222 or 01772 716565\nShould you wish to call the triage line, please call 01257 245346 (please note opening times above)",
+    "lat": 53.6655426,
+    "lon": -2.635751,
+    "name": "Chorley and South Ribble Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01257 245346"
+  },
+  "Colchester Hospital|51.9099|0.8989": {
+    "cover": "Emergency Eye care\n09:00-18:00 Mon-Fri via telephone referral",
+    "email": "",
+    "lat": 51.9098567,
+    "lon": 0.89889990000006,
+    "name": "Colchester Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01206 286 871 (eye clinic)\n01206 286 872 (eye clinic)\n01206 747 474 (switchboard) option 6 for emergency referrals"
+  },
+  "Conquest Hospital|50.8855|0.5678": {
+    "cover": "On call covered by Eastbourne Hospital",
+    "email": "Esht.eyeemergencies@nhs.net",
+    "lat": 50.8855183,
+    "lon": 0.5677931,
+    "name": "Conquest Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Countess of Chester Hospital NHS Foundation Trust|53.2098|-2.8972": {
+    "cover": "Westminster Eye Centre\u00a008:30 AM to 4:30 PM, Monday to Friday",
+    "email": "",
+    "lat": 53.2098063,
+    "lon": -2.8972333,
+    "name": "Countess of Chester Hospital NHS Foundation Trust",
+    "serviceLevel": "booked",
+    "telephone": "01244 363 017 - Eye Casualty Triage"
+  },
+  "Crawley Hospital|51.117|-0.1964": {
+    "cover": "Emergency eye cover by Redhill",
+    "email": "eye.clinic@nhs.net",
+    "lat": 51.116982,
+    "lon": -0.1963585,
+    "name": "Crawley Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Croydon University Hospital|51.3893|-0.1112": {
+    "cover": "08:30-16:30 Mon-Fri. Walk-ins/self referrals are NOT accepted. Complete Rapid Access Clinic Referral Form (https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.moorfields.nhs.uk%2FmediaLocal%2Fjoldbq3t%2Fmoorfields-eye-centre-at-croydon-university-hospital-urgent-care-referral-form.docx&wdOrigin=BROWSELINK). Email form to below address. Rapid access clinic is a referral and review by appointment service. Urgent cases requiring same day review please contact the RAC team via the contact number on the referral form, after sending form through (marked URGENT in email subject).\n\nOut of hours: Covered by St George's Hospital\n\nConsider referring to local Primary Eyecare services for minor eye conditions - see legend for details.\n\nFor further information regarding referral pathway, please see flowchart at\u00a0https://drive.google.com/open?id=1CH1uACGug26GuQMbe4GIZ67HutINl8ef&usp=drive_fs",
+    "email": "moorfields.croydonurgentcare@nhs.net",
+    "lat": 51.3892939,
+    "lon": -0.1111861,
+    "name": "Croydon University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "See Referral Form for further details"
+  },
+  "Cumberland Infirmary|54.8968|-2.9586": {
+    "cover": "Emergency Eye Clinic\u00a0Mon-Fri 8.30-5pm",
+    "email": "ncm-tr.eye.emergencyncic@nhs.net",
+    "lat": 54.8967812,
+    "lon": -2.9585959,
+    "name": "Cumberland Infirmary",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Darent Valley Hospital|51.4352|0.2586": {
+    "cover": "",
+    "email": "",
+    "lat": 51.4352246,
+    "lon": 0.25865,
+    "name": "Darent Valley Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Darlington Memorial Hospital|54.5305|-1.5637": {
+    "cover": "Emergency Eye Clinic\u00a0Mon-Fri 8.15-6.00",
+    "email": "cddft.ophthalmologyurgentcare@nhs.net\n\nReferrals are continuously triaged from 8.00am to 7.30pm Monday to Friday; and 8.00am to 12.30pm Saturday, Sunday and Bank holidays. \nOutside of these times, urgent Ophthalmic advice can be obtained from the first on-call doctor for Ophthalmology via switchboard. \n \nIf you suspect wet ARMD or a vein occlusion, referrals should still be made directly to the appropriate email address below: \n \nWet ARMD: cddft.rapidamdreferral@nhs.net \nVein occlusions: cddft.ophthalmologyrvoreferrals@nhs.net",
+    "lat": 54.5305366,
+    "lon": -1.5637446,
+    "name": "Darlington Memorial Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01325 743 194"
+  },
+  "Diana, Princess of Wales Hospital|53.5448|-0.0962": {
+    "cover": "08:30- 18:00",
+    "email": "nlg-tr.referrals@nhs.net",
+    "lat": 53.544763,
+    "lon": -0.0961743,
+    "name": "Diana, Princess of Wales Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01472 279207"
+  },
+  "Doncaster Royal Infirmary|53.5308|-1.1098": {
+    "cover": "08:30 - 17:30",
+    "email": "Dbth.contactcentre@nhs.net",
+    "lat": 53.5308136,
+    "lon": -1.1098187,
+    "name": "Doncaster Royal Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "via switchboard 01302366666"
+  },
+  "Dorset County Hospital|50.7126|-2.446": {
+    "cover": "Eye emergency 09:00-17:30 TRIAGE 08:00-18:00 Monday till Friday, 09:00-12:00 Saturday",
+    "email": "",
+    "lat": 50.7126079,
+    "lon": -2.445987,
+    "name": "Dorset County Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage line 01305255192 Mon-Fri 08:00-18:00, Sat 08:00-12:00\n\nTriage nurse via telephone provided will liaise with on-call consultant. Out of hours refer to Royal Bournemouth Hospital"
+  },
+  "Ealing Hospital|51.5075|-0.3465": {
+    "cover": "Part of London North West University Healthcare Foundation Trust",
+    "email": "LNWH-tr.centraleye@nhs.net",
+    "lat": 51.5075205,
+    "lon": -0.3465216,
+    "name": "Ealing Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "East Surrey Hospital|51.219|-0.1624": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service.\n\nOculoplastic and corneal emergencies go to Queen Victoria Hospital in East Grinstead\n\nMonday to Friday 9-5pm",
+    "email": "eye.clinic@nhs.net",
+    "lat": 51.2189735,
+    "lon": -0.162401799999998,
+    "name": "East Surrey Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Eastbourne District General Hospital|50.7864|0.2693": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service",
+    "email": "Esht.eyeemergencies@nhs.net",
+    "lat": 50.7864002,
+    "lon": 0.2692998,
+    "name": "Eastbourne District General Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Epsom Cottage Hospital|51.3345|-0.2553": {
+    "cover": "Outpatient hospital, no ophthalmology",
+    "email": "",
+    "lat": 51.3345331,
+    "lon": -0.2553491,
+    "name": "Epsom Cottage Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Epsom Hospital|51.3251|-0.2732": {
+    "cover": "No emergency eye service. Covered by Acute Eye Service at St Helier's Hospital.",
+    "email": "est-tr.acute-eye-referral@nhs.net\n\nOut of hours\u00a0moorfields.sghurgentcare@nhs.net",
+    "lat": 51.3251497,
+    "lon": -0.2732057,
+    "name": "Epsom Hospital",
+    "serviceLevel": "none",
+    "telephone": "\"\"If you are emailing to request a same day assessment for a patient please ensure you also call us on 020 8296 3817. Please note the Acute Eye Service at St Helier Hospital is only open from Monday to Friday (excluding bank holidays) from 8.30 to 4.30.\n\nWhen we are closed, the out of hours urgent care service at Moorfields at St Georges can be contacted on 020 7702 5542 between 8 am and 8.30pm every day, choosing option 6. Between 8.30 pm and 8am please dial 07921 056 594 if urgent advice is needed\"\""
+  },
+  "Erith and District Hospital|51.4769|0.1674": {
+    "cover": "Outpatients, no ophthalmology",
+    "email": "",
+    "lat": 51.476933,
+    "lon": 0.1673859,
+    "name": "Erith and District Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Evelina London Children's Hospital|51.4983|-0.1185": {
+    "cover": "Covered by St Thomas' Hospital",
+    "email": "",
+    "lat": 51.4983258,
+    "lon": -0.1184793,
+    "name": "Evelina London Children's Hospital",
+    "serviceLevel": "none",
+    "telephone": "02071884336"
+  },
+  "Farnham Hospital|51.2204|-0.7847": {
+    "cover": "No emergency eye cover",
+    "email": "",
+    "lat": 51.2203978,
+    "lon": -0.7847006,
+    "name": "Farnham Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Farnham Road Hospital|51.2359|-0.5853": {
+    "cover": "No emergency eye cover",
+    "email": "",
+    "lat": 51.2358726,
+    "lon": -0.5853287,
+    "name": "Farnham Road Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Finchley Memorial Hospital|51.6054|-0.1764": {
+    "cover": "Some ophthalmic services. No ocular trauma",
+    "email": "",
+    "lat": 51.6054045,
+    "lon": -0.1764142,
+    "name": "Finchley Memorial Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Freeman Hospital|55.0026|-1.5934": {
+    "cover": "",
+    "email": "",
+    "lat": 55.0026019,
+    "lon": -1.593423,
+    "name": "Freeman Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Switchboard: 0191 233 6161"
+  },
+  "Frimley Park Hospital|51.3198|-0.7421": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service",
+    "email": "fph-tr.eyecasualtyfrimley@nhs.net",
+    "lat": 51.319766,
+    "lon": -0.7420871,
+    "name": "Frimley Park Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Gartnavel General Hospital|55.8826|-4.3128": {
+    "cover": "Acute referral clinic",
+    "email": "",
+    "lat": 55.8826498,
+    "lon": -4.3128461,
+    "name": "Gartnavel General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01412 111033"
+  },
+  "Glangwili Hospital|51.8678|-4.2839": {
+    "cover": "RACE Clinic\u00a09am-5pm",
+    "email": "raceservice.hdd@wales.nhs.uk",
+    "lat": 51.8677927,
+    "lon": -4.2839247,
+    "name": "Glangwili Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01267 227 599.\u00a0On-Call number 01267 235151"
+  },
+  "Gloucestershire Royal Hospital|51.8661|-2.2329": {
+    "cover": "Emergency eye care 7 days a week from 8am to 8pm",
+    "email": "",
+    "lat": 51.8660784,
+    "lon": -2.232898,
+    "name": "Gloucestershire Royal Hospital",
+    "serviceLevel": "booked",
+    "telephone": "03004223578, Option 1 for triage nurse from 0900-1800. Out of hours for doctor on call"
+  },
+  "Gravesham Community Hospital|51.4431|0.3655": {
+    "cover": "No emergency eye cover",
+    "email": "",
+    "lat": 51.4430661,
+    "lon": 0.3654873,
+    "name": "Gravesham Community Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Great North Children's Hospital|54.9797|-1.618": {
+    "cover": "",
+    "email": "",
+    "lat": 54.9796516,
+    "lon": -1.617961,
+    "name": "Great North Children's Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Paeds: 0191 282 6111"
+  },
+  "Great Ormond Street Hospital for Children|51.5232|-0.1207": {
+    "cover": "Paediatric hospital",
+    "email": "",
+    "lat": 51.5231639,
+    "lon": -0.120741,
+    "name": "Great Ormond Street Hospital for Children",
+    "serviceLevel": "booked",
+    "telephone": "020 7405 9200 emergency number to talk to ophthalmologist"
+  },
+  "Guy's Hospital|51.5033|-0.0869": {
+    "cover": "Covered by St Thomas' Hospital",
+    "email": "",
+    "lat": 51.5033114,
+    "lon": -0.0868546,
+    "name": "Guy's Hospital",
+    "serviceLevel": "none",
+    "telephone": "02071884336"
+  },
+  "Hammersmith Hospital|51.5172|-0.2358": {
+    "cover": "No ophthalmology",
+    "email": "",
+    "lat": 51.5171954,
+    "lon": -0.2357805,
+    "name": "Hammersmith Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Harefield Hospital|51.6068|-0.4827": {
+    "cover": "Cardiothoracic hospital. Covered by St Thomas hospital",
+    "email": "",
+    "lat": 51.6067699,
+    "lon": -0.4827024,
+    "name": "Harefield Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Hereford County Hospital|52.0572|-2.7062": {
+    "cover": "Walk ins or booked",
+    "email": "Wvt.directeyereferrals@nhs.net",
+    "lat": 52.0571687,
+    "lon": -2.7062187,
+    "name": "Hereford County Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "Ext 1766 for eye casualty, ext 2926 is more responsive"
+  },
+  "Hillingdon Hospital|51.5252|-0.4612": {
+    "cover": "09:00-17:00 Mon-Fri via telephone or email referral. NO walk-in service. Western Eye Hospital out of hours",
+    "email": "thh-tr.bookingcentre@nhs.net for all referrals.",
+    "lat": 51.5252078,
+    "lon": -0.461238500000036,
+    "name": "Hillingdon Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01895 238 282 Ext: 2027"
+  },
+  "Hinchingbrooke Hospital|52.3323|-0.2032": {
+    "cover": "Eye clinic\u00a0Mon, Wed, fri 0900-1700",
+    "email": "",
+    "lat": 52.3322774,
+    "lon": -0.2031881,
+    "name": "Hinchingbrooke Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01480 416416"
+  },
+  "Homerton Healthcare NHS Foundation Trust|51.5507|-0.0457": {
+    "cover": "Outreach clinic for Moorfields",
+    "email": "",
+    "lat": 51.5507442,
+    "lon": -0.0456981,
+    "name": "Homerton Healthcare NHS Foundation Trust",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Horsham Community Hospital|51.0701|-0.3241": {
+    "cover": "Emergency eye cover by Redhill",
+    "email": "eye.clinic@nhs.net",
+    "lat": 51.0701345,
+    "lon": -0.324125,
+    "name": "Horsham Community Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Huddersfield Royal Infirmary|53.6553|-1.8168": {
+    "cover": "Eye Clinic",
+    "email": "eye.secretary@cht.nhs.uk\n\neye.referrals@cht.nhs.uk",
+    "lat": 53.6553351,
+    "lon": -1.8167849,
+    "name": "Huddersfield Royal Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01422222539"
+  },
+  "Hull Royal Infirmary|53.7442|-0.3584": {
+    "cover": "8.15-5pm Mon-Fri",
+    "email": "hyp-tr.arceyef.nurses@nhs.net",
+    "lat": 53.7441816,
+    "lon": -0.3584076,
+    "name": "Hull Royal Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01482875875 (Ext: 816658)"
+  },
+  "Ipswich Hospital|52.0579|1.1981": {
+    "cover": "Emergency Eye care\u00a09am to 6pm every day, including bank holidays and weekends",
+    "email": "",
+    "lat": 52.0579075,
+    "lon": 1.19811530000004,
+    "name": "Ipswich Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01473 712 233 (eye clinic)\n01473 703 230 (eye clinic)\n01473 712 233 (switchboard)\n\n01473703178"
+  },
+  "Kent and Canterbury Hospital|51.2662|1.0866": {
+    "cover": "On call covered by William Harvey Hospital in Ashford",
+    "email": "ekhuft.urgenteye@nhs.net",
+    "lat": 51.2662051,
+    "lon": 1.0866394,
+    "name": "Kent and Canterbury Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Kettering General Hospital|52.401|-0.7418": {
+    "cover": "8.30-5 weekdays, 8.30-1 weekends",
+    "email": "kgh-tr.eyeemergencies@nhs.net - GP and optom only",
+    "lat": 52.4010473,
+    "lon": -0.7417864,
+    "name": "Kettering General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01536 492000 - for patients"
+  },
+  "Kidderminster Hospital|52.3859|-2.2609": {
+    "cover": "",
+    "email": "wah-tr.emergencycliniceyereferralktc@nhs.net",
+    "lat": 52.3858673,
+    "lon": -2.2608725,
+    "name": "Kidderminster Hospital",
+    "serviceLevel": "booked",
+    "telephone": "1562512382 - triage nurse.\u00a09:00-16:30 - triage nurse, clinic 8:00-17:00, no weekends"
+  },
+  "King George Hospital|51.5806|0.1121": {
+    "cover": "Part of Barking, Havering and Redbridge University Hospitals Trust - covered by Queen's Hospital Romford",
+    "email": "bhrut.urgenteyecare@nhs.net",
+    "lat": 51.5805615,
+    "lon": 0.1120638,
+    "name": "King George Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "King's College Hospital|51.4681|-0.0939": {
+    "cover": "08:00-16:00 Mon-Fri. Referral only, via telephone or email. Telephone if same day review required.\n\n On call off site outside these hours via switchboard - telephone before sending.\n\nReferral must include: patient telephone/email, VA, symptoms, past ophthalmic/medical/social history, allergies.",
+    "email": "kch-tr.earlyreferralservice@nhs.net",
+    "lat": 51.4681404,
+    "lon": -0.093854800000031,
+    "name": "King's College Hospital",
+    "serviceLevel": "booked",
+    "telephone": "In hours: 020 3299 0443 (option 1). \nOut of hours: 020 3299 9000 (On call or Ext: 35465).\n\n02032997451 nurses phone to check for referrals"
+  },
+  "King's Mill Hospital|53.1344|-1.234": {
+    "cover": "",
+    "email": "",
+    "lat": 53.1343543,
+    "lon": -1.2339599,
+    "name": "King's Mill Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Emergency Referrals & Advice (8am until 4pm) \u2013 01623 622515 ext 3317\nAfter 4pm contact would be via the switchboard \u2013 01623 622515\nTriage mobile \u2013 07386 698057\nThe Ophthalmology Triage Nurse is on bleep 276"
+  },
+  "Kingston Hospital|51.4148|-0.2824": {
+    "cover": "08:30-16:30 Mon-Fri. NO WALK-IN SERVICE. Out of hours covered by St George's Hospital\n\nPlease note that the Acute Referral Clinic triage line is open Monday to Friday from 8:30 to 16:30 (excluding bank holidays)",
+    "email": "khft.reueyecasualty@nhs.net",
+    "lat": 51.4148236,
+    "lon": -0.2823947,
+    "name": "Kingston Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 8934 6799 (GIVE NUMBER TO PATIENT FOR SELF-REFERRAL)\n\nReferrals for emergency (same day/next day) appointments in the Acute Referral Clinic: \n\nCall 02089346723 (this line is strictly dedicated to healthcare professionals only) \n\nReferrals for urgent appointments within 1 week: \nEmail krft.reuhelpdesk1@nhs.net"
+  },
+  "Leeds General Infirmary|53.8025|-1.5529": {
+    "cover": "Eye Casualty\u00a008:00 - 17:00",
+    "email": "leedsth-tr.ophurgents@nhs.net",
+    "lat": 53.8025431,
+    "lon": -1.5528919,
+    "name": "Leeds General Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "via switchboard- 0113 2432799"
+  },
+  "Leicester Royal Infirmary|52.6268|-1.1349": {
+    "cover": "Walk-in. Monday to Friday, 08:30am to 4:30pm. Saturday, Sunday and bank holidays, 8:30am to 12:30pm. We are not open on Christmas Day.",
+    "email": "",
+    "lat": 52.6267721,
+    "lon": -1.1349464,
+    "name": "Leicester Royal Infirmary",
+    "serviceLevel": "walk-in",
+    "telephone": "0116 258 6273"
+  },
+  "Leighton Hospital|53.1185|-2.4762": {
+    "cover": "Eye Care Centre at Mid Cheshire Hospitals\u00a0Monday to Friday, 09:00 AM to 5:00 PM",
+    "email": "",
+    "lat": 53.1184857,
+    "lon": -2.476226,
+    "name": "Leighton Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01270 255141 switchboard"
+  },
+  "Lewes Victoria Hospital|50.8751|-0.0055": {
+    "cover": "On call covered by Brighton",
+    "email": "uhsussex.emergencyreferralssrh.ophthalmic@nhs.net",
+    "lat": 50.8750645,
+    "lon": -0.0055455,
+    "name": "Lewes Victoria Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Lincoln County Hospital|53.2335|-0.5195": {
+    "cover": "Monday to Friday 9.00am to 5.00pm",
+    "email": "",
+    "lat": 53.2335068,
+    "lon": -0.5195392,
+    "name": "Lincoln County Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01522 573566 - this sends to eye injection team, ext 307180 for ophthal dept but no specific eye emergency"
+  },
+  "Lister Hospital|51.9242|-0.2127": {
+    "cover": "Booked and walk-ins\n\nMon-Fri 9-19.30\nSat 9-12.30\n\nRefer via Urgent Eye Care email before sending patient (or call and speak with triage nurse as below)\n\nOphthalmology consultant on call available via switchboard",
+    "email": "enh-tr.urgenteyereferral@nhs.net",
+    "lat": 51.9241581,
+    "lon": -0.212682800000039,
+    "name": "Lister Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "01438 314 333 (switchboard) - Ask for Urgent Eye Clinic Nurse\u00a0\n\n01438 286222"
+  },
+  "Luton and Dunstable University Hospital|51.8948|-0.4746": {
+    "cover": "Acute Eye Clinic\n09:00-1700 Mon-fri",
+    "email": "",
+    "lat": 51.8947933,
+    "lon": -0.474637099999995,
+    "name": "Luton and Dunstable University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01582 718320\nOut of hours, ophthalmologist on call via switchboard\u00a001582 491166 - 1st on call until 21:00 then consultant on call thereafter.\u00a0\nOn call ophthalmologist shared with Bedford Hospital and Milton Keynes University Hospital"
+  },
+  "Macclesfield District General Hospital|53.2622|-2.1417": {
+    "cover": "Urgent eye care services are available at Macclesfield District General Hospital between 9.00am and 5.00pm, Monday to Friday. Outside of these hours, specialist ophthalmology cover is provided through the Eye Department at Leighton Hospital, Crewe, which accepts patients requiring immediate ophthalmic assessment and treatment.",
+    "email": "",
+    "lat": 53.2621575,
+    "lon": -2.141668,
+    "name": "Macclesfield District General Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Maidstone Hospital|51.2748|0.4851": {
+    "cover": "In hours - Rapid Access Clinic (RAC). Overnight - on call service",
+    "email": "mtw-tr.eyesrac@nhs.net",
+    "lat": 51.2747712,
+    "lon": 0.485144999999989,
+    "name": "Maidstone Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01622 226 228"
+  },
+  "Manchester Royal Eye Hospital|53.4613|-2.2256": {
+    "cover": "Walk in Emergency Eye Clinic\u00a0Mon-Sun 8am-8pm",
+    "email": "",
+    "lat": 53.4613122,
+    "lon": -2.2256377,
+    "name": "Manchester Royal Eye Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "0161 7014 163"
+  },
+  "Medway Maritime Hospital|51.3795|0.5416": {
+    "cover": "Emergency cover by Maidstone",
+    "email": "mtw-tr.eyesrac@nhs.net",
+    "lat": 51.379464,
+    "lon": 0.5415583,
+    "name": "Medway Maritime Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Mile End Hospital|51.5251|-0.0421": {
+    "cover": "Part of Barts Health NHS Trust",
+    "email": "bartshealth.whippsurgenteye@nhs.net",
+    "lat": 51.5250734,
+    "lon": -0.0421445,
+    "name": "Mile End Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Milton Keynes University Hospital|52.0262|-0.7372": {
+    "cover": "BUS clinic eye emergency clinic\n\nVia switchboard to on-call ophthalmologists, shared with luton and bedford after 17:00pm",
+    "email": "bus.referrals@mkuh.nhs.uk",
+    "lat": 52.026165,
+    "lon": -0.7372004,
+    "name": "Milton Keynes University Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Moorfields Eye Hospital NHS Foundation Trust|51.5276|-0.0898": {
+    "cover": "24 hours walk in eye casualty\n\n24 hours advice line for clinicians\n\nPlease telephone to discuss whether referral appropriate - if patients require systemic work-up including MRI facilities, would be more suitable for a general hospital",
+    "email": "moorfields.aeadmin@nhs.net",
+    "lat": 51.5276377,
+    "lon": -0.0897774000000027,
+    "name": "Moorfields Eye Hospital NHS Foundation Trust",
+    "serviceLevel": "walk-in",
+    "telephone": "020 7521 4682 (NUMBER NOT TO BE GIVEN TO PATIENTS)"
+  },
+  "Mount Vernon Hospital|51.6152|-0.4456": {
+    "cover": "Some ophthalmology services. No ocular trauma. Covered by Hillingdon",
+    "email": "thh.nursetriage@nhs.net\nand copy thh-tr.bookingcentre@nhs.net for all urgent referrals.\n\nFor routine referrals email thh-tr.bookingcentre@nhs.net alone",
+    "lat": 51.6151644,
+    "lon": -0.4455876,
+    "name": "Mount Vernon Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Musgrove Park Hospital|51.0113|-3.1207": {
+    "cover": "n hours emergency clinic 09:00-17:00, overnight on call",
+    "email": "acutereferralclinic@somersetft.nhs.uk\n\n\"Our opening hours for email referrals are 08:00 - 1730 Monday-Friday excluding Bank Holidays.\n\nIf you are referring a patient outside of this time please contact Musgrove Hospital on 01823 333444 and ask for the Ophthalmologist on-call.\n\nAlternatively contact Blake Ward on 01823 342023\"",
+    "lat": 51.0113233,
+    "lon": -3.1207358,
+    "name": "Musgrove Park Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage 01823344662 Mon-Fri 9-5, switch or press 2"
+  },
+  "NHS St Pancras Hospital|51.5366|-0.1314": {
+    "cover": "Rehab facility",
+    "email": "",
+    "lat": 51.5365741,
+    "lon": -0.1314263,
+    "name": "NHS St Pancras Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "National Hospital for Neurology and Neurosurgery|51.5222|-0.1223": {
+    "cover": "Neuro-ophthalmology only",
+    "email": "",
+    "lat": 51.5222486,
+    "lon": -0.1222765,
+    "name": "National Hospital for Neurology and Neurosurgery",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "New Cross Hospital|52.6|-2.0953": {
+    "cover": "A walk in service is available weekdays 8am-5pm and weekends 8am-3/4pm",
+    "email": "rwh-tr.optometry-referrals@nhs.net",
+    "lat": 52.5999555,
+    "lon": -2.0952791,
+    "name": "New Cross Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "01902 695805 / 695800."
+  },
+  "Newark Hospital|53.0676|-0.8063": {
+    "cover": "",
+    "email": "",
+    "lat": 53.0675716,
+    "lon": -0.8063491,
+    "name": "Newark Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01636 685750 or 01636 6857511"
+  },
+  "Newham Hospital|51.5227|0.0379": {
+    "cover": "Part of Barts Health NHS Trust",
+    "email": "bartshealth.whippsurgenteye@nhs.net",
+    "lat": 51.5227127,
+    "lon": 0.0379309,
+    "name": "Newham Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Ninewells Hospital|56.4644|-3.039": {
+    "cover": "In hours emergency clinic, overnight on call",
+    "email": "TAY.ophthalmology@nhs.scot",
+    "lat": 56.4644071,
+    "lon": -3.0390129,
+    "name": "Ninewells Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Norfolk and Norwich University Hospital|52.6172|1.2205": {
+    "cover": "Eye clinic\u00a009:00-1700",
+    "email": "opservicespostteam@nnuh.nhs.uk (mark as urgent)",
+    "lat": 52.6171703,
+    "lon": 1.2205169,
+    "name": "Norfolk and Norwich University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01603286286, ext 3787\n\nDoctor on-call for 24 hours but from 0900-1700 Nurse triages"
+  },
+  "North Devon District Hospital|51.0922|-4.0504": {
+    "cover": "Emergency eye clinic\u00a008:00-16:00",
+    "email": "",
+    "lat": 51.0921687,
+    "lon": -4.0504313,
+    "name": "North Devon District Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage line 01271322461 Mon-Fri 08:00-17:00, out of hours via switchboard 01271 322577 for doctor"
+  },
+  "North Middlesex University Hospital|51.6131|-0.0743": {
+    "cover": "09:00-16:00 Mon-Thurs, 09:00-12:00 Fri Walk in",
+    "email": "northmid.ophthalmology@nhs.net",
+    "lat": 51.6131219,
+    "lon": -0.0743406000000277,
+    "name": "North Middlesex University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 8887 2274\n020 8887 3417"
+  },
+  "North Tyneside General Hospital|55.0254|-1.4679": {
+    "cover": "UTC (NOT EYE SPECIFIC) 8am-12pm, 7 days/week",
+    "email": "",
+    "lat": 55.0254219,
+    "lon": -1.467913,
+    "name": "North Tyneside General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0344 811 8111"
+  },
+  "Northampton General Hospital|52.2358|-0.8841": {
+    "cover": "Monday- Saturday 8.30am- 4.30pm, Sundays and Bank Holidays- 9.00am- 12.30pm,",
+    "email": "ngh-tr.eyecasualty@nhs.net",
+    "lat": 52.2358082,
+    "lon": -0.8841462,
+    "name": "Northampton General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01604 545085 ext 1 or 01604 634700 ext 8011"
+  },
+  "Northern Care Alliance NHS Foundation Trust|53.4866|-2.3245": {
+    "cover": "9-5 weekdays only",
+    "email": "urgentreferrals@nca.nhs.uk",
+    "lat": 53.4866012,
+    "lon": -2.3244996,
+    "name": "Northern Care Alliance NHS Foundation Trust",
+    "serviceLevel": "booked",
+    "telephone": "1706901701"
+  },
+  "Northwick Park Hospital|51.5754|-0.3202": {
+    "cover": "Part of London North West University Healthcare Foundation Trust\n\nIn hours covered by Moorfields. Out of hours covered by Western Eye Hospital",
+    "email": "LNWH-tr.centraleye@nhs.net",
+    "lat": 51.5754036,
+    "lon": -0.3201721,
+    "name": "Northwick Park Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Optegra|51.5922|-0.2539": {
+    "cover": "Only for patients within 3 months of surgery with Optegra",
+    "email": "",
+    "lat": 51.5922329,
+    "lon": -0.2538937,
+    "name": "Optegra",
+    "serviceLevel": "booked",
+    "telephone": "08:00-18:00 Mon-Fri: \n020 3137 9418\nOutside these hours:\n07769 263 571"
+  },
+  "Orpington Hospital|51.3624|0.0951": {
+    "cover": "Part of King's College Hospitals NHS Foundation Trust",
+    "email": "Kch-tr.qmsrapideyeservice-referral@nhs.net",
+    "lat": 51.3624153,
+    "lon": 0.0950913,
+    "name": "Orpington Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Oxford Eye Hospital at John Radcliffe Hospital|51.7644|-1.2189": {
+    "cover": "Eye Emergency Department\n\nOxford Eye Hospital at John Radcliffe Hospital, West Wing LG1\n\nTelephone Triage first\nTriage line open: Mon-Fri 08:30 \u2013 16:30, Weekends and BH: 08:30 \u2013 15:30",
+    "email": "Email: oeh.urgentreferrals@ouh.nhs.uk\u00a0(please note this is managed by administrators and is for receipt of referral letters only, we will NOT contact a patient directly on receipt of an email and would still ask that a call is made to the telephone triage line/on-call to arrange appropriate arrival of the patient)",
+    "lat": 51.7643902,
+    "lon": -1.2188766,
+    "name": "Oxford Eye Hospital at John Radcliffe Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01865 234567 option 1\nOn-call advice available through main JRH switchboard: 0300 304 7777"
+  },
+  "Peterborough City Hospital|52.5844|-0.2781": {
+    "cover": "Eye clinic\u00a008:00-18:00 Mon-fri",
+    "email": "nwangliaft.ophthsecs@nhs.net for in hours referals",
+    "lat": 52.5843779,
+    "lon": -0.2781018,
+    "name": "Peterborough City Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01733678000 for on-call doctor for out of hours"
+  },
+  "Pilgrim Hospital|52.9905|-0.0122": {
+    "cover": "8-8 weekdays, weekends 9-5 (shared with Lincoln hospital)",
+    "email": "",
+    "lat": 52.9905401,
+    "lon": -0.0122276,
+    "name": "Pilgrim Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switch to eye clinic then option 7 to get to triage nurse"
+  },
+  "Prince Charles Eye Unit|51.4736|-0.6132": {
+    "cover": "Prince Charles Eye Unit, eye casualty\u00a009:00-17:00 Monday to Friday, 09:00-12:00 Weekends\n\nWalk in casualty",
+    "email": "",
+    "lat": 51.4736268,
+    "lon": -0.6131691,
+    "name": "Prince Charles Eye Unit",
+    "serviceLevel": "walk-in",
+    "telephone": "Out of hours Via switchboard to bleep on-call ophthalmologist"
+  },
+  "Princess Royal Hospital|50.991|-0.0906": {
+    "cover": "On call covered by Brighton",
+    "email": "uhsussex.emergencyreferralssrh.ophthalmic@nhs.net",
+    "lat": 50.990989,
+    "lon": -0.0906292,
+    "name": "Princess Royal Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Princess Royal University Hospital|51.3661|0.0582": {
+    "cover": "Part of King's College Hospital NHS Foundation Trust",
+    "email": "Kch-tr.qmsrapideyeservice-referral@nhs.net",
+    "lat": 51.3661498,
+    "lon": 0.0581939,
+    "name": "Princess Royal University Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Princess of Wales Hospital|51.5174|-3.5724": {
+    "cover": "Eye Casualty\u00a0Mon-Fri 9am-4pm & Sat-Sun 9am-12pm",
+    "email": "ctm.eyecasualtypow@wales.nhs.uk",
+    "lat": 51.51741,
+    "lon": -3.5723825,
+    "name": "Princess of Wales Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01656 753 979 (Day only)"
+  },
+  "Princess of Wales Hospital|52.4133|0.2755": {
+    "cover": "Eye Casualty\u00a008:30-17:00",
+    "email": "",
+    "lat": 52.4132578,
+    "lon": 0.2754807,
+    "name": "Princess of Wales Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01553613613 for eye casualty doctor"
+  },
+  "Queen Alexandra Hospital|50.8497|-1.0706": {
+    "cover": "Emergency eye clinic at The Queen Alexandra Hospital\u00a008:00-17:00 Monday to Friday, 08:00-13:00 Saturday",
+    "email": "Pho-tr&phteyeurgentrefso@nhs.net",
+    "lat": 50.8497257,
+    "lon": -1.0705618,
+    "name": "Queen Alexandra Hospital",
+    "serviceLevel": "booked",
+    "telephone": "02392 286000, ext 6162"
+  },
+  "Queen Charlotte's and Chelsea Hospital|51.5164|-0.2375": {
+    "cover": "Maternity / neonatal hospital",
+    "email": "",
+    "lat": 51.5163664,
+    "lon": -0.2374661,
+    "name": "Queen Charlotte's and Chelsea Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Queen Elizabeth Hospital|51.4778|0.0506": {
+    "cover": "",
+    "email": "Covered by Queen Mary\u2019s Hospital Sidcup",
+    "lat": 51.4778139,
+    "lon": 0.0505587,
+    "name": "Queen Elizabeth Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Queen Elizabeth Hospital|54.9383|-1.5811": {
+    "cover": "",
+    "email": "",
+    "lat": 54.9383334,
+    "lon": -1.5810786,
+    "name": "Queen Elizabeth Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "0191 482 0000"
+  },
+  "Queen Elizabeth The Queen Mother Hospital|51.3771|1.3889": {
+    "cover": "On call covered by William Harvey Hospital",
+    "email": "ekhuft.urgenteye@nhs.net",
+    "lat": 51.377091,
+    "lon": 1.3888525,
+    "name": "Queen Elizabeth The Queen Mother Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Queen Mary's Hospital Sidcup|51.4186|0.1033": {
+    "cover": "08:00-21:00 Mon-Fri: Referral only, via email. Telephone if same day review required.\nOut of hours covered by King's College Hospital",
+    "email": "08:00-16:00 Mon-Fri:\u00a0kch-tr.qmsrapideyeservice-referral@nhs.net\u00a0. \n16:00-21:00 Mon-Fri: kch-tr.urgenteyesqms-referrals@nhs.net",
+    "lat": 51.418594,
+    "lon": 0.103268999999955,
+    "name": "Queen Mary's Hospital Sidcup",
+    "serviceLevel": "booked",
+    "telephone": "08:00-16:00 Mon-Fri: eye clinic 020 3299 0443 (option 2)\n16:00-21:00 Mon-Fri: 020 8302 2678"
+  },
+  "Queen Mary's Hospital|51.4557|-0.2427": {
+    "cover": "No ophthalmology or A&E",
+    "email": "",
+    "lat": 51.4556562,
+    "lon": -0.2426609,
+    "name": "Queen Mary's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Queen Victoria Hospital|51.1351|-0.002": {
+    "cover": "On call service for oculoplastics, cornea and glaucoma. Retina and neuro-ophth emergencies go to East Surrey Hospital",
+    "email": "tqv-tr.referrals@nhs.net\n\nIf you are sending an Oncology referral please can you ensure that \n\nqvh.cancerteam@nhs.net and tqv-tr.2wwreferrals@nhs.net are copied in on the email.\n\n \n\nAny referrals regarding MOHS Surgery must be accompanied by :-\n\nPhotographs of lesion being referred \nHistology to show biopsy-proven Basal Cell Carcinoma",
+    "lat": 51.1350886,
+    "lon": -0.0019779,
+    "name": "Queen Victoria Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Referrals Team\nTel 01342 414193"
+  },
+  "Queen's Hospital Burton|52.8178|-1.6561": {
+    "cover": "8.30-5pm weekdays, 8.30-12 sat",
+    "email": "bhft.eyecas@nhs.net\n\n\"We can be contacted on 01283 566333 ex 5085 and answer phone message can be left for us to contact you back if call not answered at the time. \n\nWe are open from Mon-Friday 08:00am- 5:00pm, Saturday 08:00am-12:00pm and are closed on Sunday and Bank Holidays.\"",
+    "lat": 52.8177614,
+    "lon": -1.6561337,
+    "name": "Queen's Hospital Burton",
+    "serviceLevel": "booked",
+    "telephone": "01283566333 ext 5085"
+  },
+  "Queen's Hospital|51.569|0.179": {
+    "cover": "08:30-17:00 Mon-Fri. Only urgent care, no walk in.",
+    "email": "bhrut.urgenteyecare@nhs.net\n\nFor non-immediate referrals\n\nEmails must include:\nPatient name, DOB, NHS number, contact number\nHistory, symptoms\nVisual acuity\nPupil responses",
+    "lat": 51.5689553,
+    "lon": 0.179030900000043,
+    "name": "Queen's Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Mon-Fri 08:30-17:00: Eye Clinic 01708 435 000 ext: 6662 (or 3550/3551/3549)\n\nMon-Fri 17:00-20:00, and Sat-Sun 09:00-15:00: Telephone/video triage by Evolutio 0800 112 0070\n\nOutside of these hours, refer to local emergency eye unit"
+  },
+  "Queen's Medical Centre|52.9436|-1.185": {
+    "cover": "Eye Casualty telephone triage will be available every day from 8am to 8pm\nWalk-in appointments - Weekdays: 8am to 4pm, Weekends: 8am to 12.30pm\nOutside of these hours, patients will only be seen if they are:\nReferred by A&E (ED), a GP, NHS 111, or a community optometrist, and have first been assessed through telephone triage",
+    "email": "",
+    "lat": 52.9436069,
+    "lon": -1.1849742,
+    "name": "Queen's Medical Centre",
+    "serviceLevel": "walk-in",
+    "telephone": "0115 924 9924 Ext: 82882"
+  },
+  "Rochdale Infirmary|53.6233|-2.1597": {
+    "cover": "Eye Casualty Clinic\u00a0Mon-Fri 9am-5pm",
+    "email": "urgentreferrals@nca.nhs.uk",
+    "lat": 53.6232754,
+    "lon": -2.1597449,
+    "name": "Rochdale Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01706 901701"
+  },
+  "Royal Albert Edward Infirmary|53.558|-2.6297": {
+    "cover": "WWL Eye Unit based at Boston House.\u00a0Boston House opens Mon-Fri 08:30-17:00\n\nOphthalmology is based at Boston House, not RAEI.",
+    "email": "wwl-tr.amdnewreferrals@nhs.net",
+    "lat": 53.557953,
+    "lon": -2.6297315,
+    "name": "Royal Albert Edward Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01942 822 244 - Direct line for the WWL\n\nCall 01942 244 000 (the main)"
+  },
+  "Royal Berkshire Hospital|51.4502|-0.9577": {
+    "cover": "Prince Charles Eye Unit at Windsor is walk in, eye casualty\u00a009:00-17:00 Monday to Friday, 09:00-12:00 Weekends",
+    "email": "",
+    "lat": 51.4502443,
+    "lon": -0.9577194,
+    "name": "Royal Berkshire Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard to bleep on-call ophthalmologist"
+  },
+  "Royal Bolton Hospital|53.5536|-2.4303": {
+    "cover": "Bolton Eye Unit\u00a08-6, Mon-Fri",
+    "email": "",
+    "lat": 53.5535865,
+    "lon": -2.4303348,
+    "name": "Royal Bolton Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Royal Bournemouth Hospital|50.7481|-1.8223": {
+    "cover": "Eye emergency Mon-Fri 08:00-18:00, Sat 08:30-1800, Sun 08:30-14:00",
+    "email": "",
+    "lat": 50.748082,
+    "lon": -1.8222734,
+    "name": "Royal Bournemouth Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage line 03000194181 in hours, via switchboard out of hours"
+  },
+  "Royal Brompton Hospital|51.4891|-0.1701": {
+    "cover": "Heart and lung centre. No ophthalmology, Covered by St Thomas Hospital",
+    "email": "",
+    "lat": 51.4891103,
+    "lon": -0.1701254,
+    "name": "Royal Brompton Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Cornwall Hospital|50.2662|-5.0922": {
+    "cover": "Eye casualty clinic at Royal Cornwall Hospital 08:45-18:00 Monday till Saturday",
+    "email": "rch-tr.emergencyeyeclinic@nhs.net",
+    "lat": 50.2662301,
+    "lon": -5.0922396,
+    "name": "Royal Cornwall Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01872253729 for triage nurse 07:00-17:00, out of hours via switchboard 01872 250000 for on call doctor"
+  },
+  "Royal Derby Hospital|52.911|-1.5129": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service",
+    "email": "uhdb.acuteeyecare@nhs.net",
+    "lat": 52.9109983,
+    "lon": -1.5128643,
+    "name": "Royal Derby Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01332 787 003 (acute eye team)"
+  },
+  "Royal Devon and Exeter Hospital|50.7169|-3.5064": {
+    "cover": "Mon-Sat\u00a008:30-17:00",
+    "email": "",
+    "lat": 50.7169427,
+    "lon": -3.5064273,
+    "name": "Royal Devon and Exeter Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01392404955 emergency line Mon-Sat 08:00-17:00 inc bank holiday, out of hours SpR via switchboard 01392 411611"
+  },
+  "Royal Eye Infirmary Plymouth|50.4148|-4.1225": {
+    "cover": "Mon-Fri 8:30-17:00, Sat, Sun and Bank Holidays 09:00-13:00",
+    "email": "plh-tr.reiuc@nhs.net",
+    "lat": 50.4147626,
+    "lon": -4.1225408,
+    "name": "Royal Eye Infirmary Plymouth",
+    "serviceLevel": "booked",
+    "telephone": "Triage nurse extension 37692 Mon-Fri 09:00-17:45, Sat-Sun 09:00-12:00, out of hours via switch for doctor"
+  },
+  "Royal Free Hospital|51.5532|-0.166": {
+    "cover": "If the patient needs to be seen\u00a0as an emergency:\u00a0the emergency eye doctor should be bleeped \u2013 GPs/ optoms should call\u00a0020 7794 0500\u00a0extension\u00a033625\u00a0or bleep\u00a01758.\n\u00a0\nAfter this\u00a0a referral document can be emailed to\u00a0rf-tr.eyecasualty@nhs.net\n\u00a0\nIf there is no answer to the bleep/ phone then email the above address and in the subject line write\u00a0Call back urgently\u00a0for advice please\u00a0(and leave a reliable number).\n\u00a0\nIf a patient with a clinical concern makes contact with yourselves and is known to us, then they need to attend our\u00a0general casualty\u00a0for review and then\u00a0they\u00a0will discuss with the clinic about accepting the patient in hours or call the on call doctor when out of hours.\n\u00a0\nIf\u00a0attend anywhere has assessed/ triaged the patient already\u00a0and then needs to be physically seen by us as they are local to us, then please either contact the clinician on call in casualty on\u00a0020 7794 0500\u00a0extension\u00a033625\u00a0or bleep\u00a01758 if it is an emergency,\u00a0or email through to us the letter from the consultation with the patient's details and we can call them to arrange an appointment if not urgent.",
+    "email": "Rf-tr.eyecasualty@nhs.net",
+    "lat": 51.5531575569084,
+    "lon": -0.165999233722687,
+    "name": "Royal Free Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 7794 0500 bleep 1758 or Ext: 33625/33627"
+  },
+  "Royal Glamorgan Hospital|51.5482|-3.3914": {
+    "cover": "Eye Casualty\u00a0Mon-Fri 9am-4pm",
+    "email": "ctm.northeyereferrals@wales.nhs.uk",
+    "lat": 51.5481973,
+    "lon": -3.3913802,
+    "name": "Royal Glamorgan Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Switchboard and ext: 6061"
+  },
+  "Royal Gwent Hospital|51.58|-2.997": {
+    "cover": "Emergency Eye Clinic\u00a0Mon-Fri 0830-1730, overnight on call\n\nIf your request is for an Urgent AMD referral - please refer to WGOS 4 providers who will forward the information to registrationrgh.abb@wales.nhs.uk",
+    "email": "emergencyeyeclinic.abb@wales.nhs.uk\n\nThis inbox is monitored from:\n08:30 \u2013 17:30 MONDAY-FRIDAY (excluding public holidays)",
+    "lat": 51.580034,
+    "lon": -2.9970306,
+    "name": "Royal Gwent Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01633 238856"
+  },
+  "Royal Hallamshire Hospital|53.3784|-1.4928": {
+    "cover": "Emergency Eye Centre\u00a08:00 - 16:00\u00a0Walk-in and Booked",
+    "email": "sth.sht-tr.ophthalmology@nhs.net",
+    "lat": 53.3783759,
+    "lon": -1.4927827,
+    "name": "Royal Hallamshire Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "01142711645"
+  },
+  "Royal Hampshire County Hospital|51.0612|-1.3299": {
+    "cover": "emergency eye clinic at Royal Hampshire County Hospital",
+    "email": "",
+    "lat": 51.0611905,
+    "lon": -1.3299212,
+    "name": "Royal Hampshire County Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Royal Hospital Chelsea|51.4871|-0.1584": {
+    "cover": "Veteran Care Home",
+    "email": "",
+    "lat": 51.4871375,
+    "lon": -0.1584374,
+    "name": "Royal Hospital Chelsea",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Infirmary of Edinburgh|55.9223|-3.1355": {
+    "cover": "8:30am - 4:30pm Mon-Fri NHS Lothian Ophthalmology triage, out of hours on call via switchboard",
+    "email": "",
+    "lat": 55.9223315,
+    "lon": -3.1354827,
+    "name": "Royal Infirmary of Edinburgh",
+    "serviceLevel": "booked",
+    "telephone": "NHS Lothian Ophthalmology triage 0131 536 3751 for clinicians only"
+  },
+  "Royal Lancaster Infirmary|54.0425|-2.8001": {
+    "cover": "UHMBT Emergency Eye Clinic\u00a0Monday to Friday: 08:30 AM to 5:00 Booked appts only",
+    "email": "ophthalmicemergencyreferral@mbht.nhs.uk\n\nEmails sent to this inbox are dealt with by the ophthalmic casualty triage nurse between 8.30 - 4.30 Monday-Friday and 10-14.30 Saturday/Sunday.",
+    "lat": 54.0424766,
+    "lon": -2.8000969,
+    "name": "Royal Lancaster Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "01229 870870\n\nTriage phone - 01229 614149 between 8.30 - 5.30 Monday - Friday and 9.30-14.30 Saturday/Sunday."
+  },
+  "Royal Liverpool University Hospital|53.4085|-2.9631": {
+    "cover": "Emergency eye clinic\u00a0\u00a0Mon-Fri 8am-8pm. Walk in casualty",
+    "email": "speed.admin@liverpoolft.nhs.uk",
+    "lat": 53.4085088,
+    "lon": -2.9631117,
+    "name": "Royal Liverpool University Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": ""
+  },
+  "Royal London Hospital for Integrated Medicine|51.5217|-0.1214": {
+    "cover": "No ophthalmology",
+    "email": "",
+    "lat": 51.5217196,
+    "lon": -0.1213667,
+    "name": "Royal London Hospital for Integrated Medicine",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Marsden Hospital - Sutton|51.3434|-0.1905": {
+    "cover": "Outpatient hospital, no ophthalmology",
+    "email": "",
+    "lat": 51.343361,
+    "lon": -0.1905314,
+    "name": "Royal Marsden Hospital - Sutton",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Marsden Hospital|51.4901|-0.1726": {
+    "cover": "Cancer hospital with head and neck and some ophthalmic cancer care",
+    "email": "",
+    "lat": 51.4900992,
+    "lon": -0.1725817,
+    "name": "Royal Marsden Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Shrewsbury Hospital|52.7091|-2.7928": {
+    "cover": "via switch ext 1476, pt to call 03030035598 (CUES), 03442644160 (MECS)",
+    "email": "",
+    "lat": 52.7091459,
+    "lon": -2.7928377,
+    "name": "Royal Shrewsbury Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Royal Stoke University Hospital|53.0039|-2.2132": {
+    "cover": "mon tues 9-5.30, wed to Fri 9-6.30, sat 9-1.30, sun 9-11.30",
+    "email": "",
+    "lat": 53.0038845,
+    "lon": -2.2131531,
+    "name": "Royal Stoke University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Patients need to book an appointment by calling 01782 674300"
+  },
+  "Royal Surrey County Hospital|51.2411|-0.6085": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service SHARED WITH ASHFORD AND ST PETER'S HOSPITAL",
+    "email": "rsch.eyeclinic@nhs.net",
+    "lat": 51.2411243,
+    "lon": -0.608517799999959,
+    "name": "Royal Surrey County Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Royal United Hospital|51.3918|-2.3907": {
+    "cover": "Emergency eye clinic 08:30 - 17:00",
+    "email": "ruh-tr.emergencyeyeclinic@nhs.net Mon-Fri 08:00-16:30",
+    "lat": 51.3918072,
+    "lon": -2.3907418,
+    "name": "Royal United Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01225826989 Mon-Fri 09:00-17:00, via switch board out of hours"
+  },
+  "Royal Victoria Hospital|51.086|1.1719": {
+    "cover": "On call covered by William Harvey Hospital",
+    "email": "ekhuft.urgenteye@nhs.net",
+    "lat": 51.0859956,
+    "lon": 1.1718946,
+    "name": "Royal Victoria Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Royal Victoria Hospital|54.5945|-5.9542": {
+    "cover": "In hours booked eye casualty clinic Mon-Fri 8am-6pm, Sat-Sun 8:30am-1pm, out of hours on call",
+    "email": "",
+    "lat": 54.5945406,
+    "lon": -5.954206,
+    "name": "Royal Victoria Hospital",
+    "serviceLevel": "booked",
+    "telephone": "2896158585"
+  },
+  "Royal Victoria Infirmary|54.9803|-1.6197": {
+    "cover": "A&E / Great North Trauma and Emergency Centre \nWalk in casualty 8.15-5pm Mon-Fri. Overnight on call service",
+    "email": "nuth.eedmessages@nhs.net",
+    "lat": 54.9802687,
+    "lon": -1.619727,
+    "name": "Royal Victoria Infirmary",
+    "serviceLevel": "walk-in",
+    "telephone": "0191 282 5905"
+  },
+  "Russells Hall Hospital|52.5022|-2.1184": {
+    "cover": "8.30-4, no weekends or BH",
+    "email": "",
+    "lat": 52.5022471,
+    "lon": -2.1184107,
+    "name": "Russells Hall Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Hosp switchboard ext 3633"
+  },
+  "Salisbury District Hospital|51.0465|-1.7882": {
+    "cover": "Eye clinic\u00a008:30-17:00",
+    "email": "Sft.arc@nhs.net",
+    "lat": 51.0464722,
+    "lon": -1.788162,
+    "name": "Salisbury District Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01722 336262 ext 1625 for on-call doctor\u00a0\nVia bleep through switchboard, 5-8:30pm SHO on-call, 8:30pm onwards at night via HAND surgical doctors"
+  },
+  "Scarborough General Hospital|54.2815|-0.4374": {
+    "cover": "",
+    "email": "",
+    "lat": 54.2815045,
+    "lon": -0.4373861,
+    "name": "Scarborough General Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Scunthorpe General Hospital|53.587|-0.6673": {
+    "cover": "Eye Clinic",
+    "email": "",
+    "lat": 53.5869761,
+    "lon": -0.6673253,
+    "name": "Scunthorpe General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "switchboard (01724282282)"
+  },
+  "Sevenoaks Hospital|51.288|0.1953": {
+    "cover": "Emergency cover by Maidstone",
+    "email": "mtw-tr.eyesrac@nhs.net",
+    "lat": 51.2879646,
+    "lon": 0.1953159,
+    "name": "Sevenoaks Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Singleton Hospital|51.6105|-3.985": {
+    "cover": "Emergency Eye Clinic\u00a00900-1230 and 1300-1700",
+    "email": "",
+    "lat": 51.6104692,
+    "lon": -3.9849536,
+    "name": "Singleton Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01792 200 369\n\n\"URCE line is open from:\nMonday to Friday - 9:00 AM until 5:00 PM.\nLines are closed during 12:30 PM - 1:00 PM\""
+  },
+  "Solihull Hospital|52.4167|-1.7749": {
+    "cover": "Pt will get triaged to different clinics - clinics have different timings",
+    "email": "Ophthalmologyappointments.email@uhb.nhs.uk",
+    "lat": 52.4167298,
+    "lon": -1.7749164,
+    "name": "Solihull Hospital",
+    "serviceLevel": "booked",
+    "telephone": "1214241234"
+  },
+  "Southampton General Hospital|50.9332|-1.4345": {
+    "cover": "Walk-ins and booked\n\nEye casualty clinic at the eye emergency department at Southampton University Hospital\u00a008:00 - 19:00 across the week\nCall the on-call dr through switchboard at Southampton Hospital, covers other area in Wessex OOH",
+    "email": "Eye_emergency@uhs.nhs.uk\n\n\"All email referrals will be reviewed by a senior ophthalmologist within 2 hours of receipt. The patient will then be contacted directly with the outcome of this review.\n\nIf you want to discuss the referral please ring the eye emergency triage line on 023 8120 6592\"",
+    "lat": 50.9331825,
+    "lon": -1.4344979,
+    "name": "Southampton General Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "2381206592"
+  },
+  "Southend University Hospital NHS Foundation Trust|51.5539|0.6877": {
+    "cover": "In hours emergency clinic 09:00-17:00, overnight on call",
+    "email": "mse.eyeunit-casualty@nhs.net",
+    "lat": 51.5538593,
+    "lon": 0.687732800000049,
+    "name": "Southend University Hospital NHS Foundation Trust",
+    "serviceLevel": "booked",
+    "telephone": "01702 435 555 and ask for ophthalmologist on call\nswitchboard 03004430002 for on-call SpR"
+  },
+  "Southlands Hospital|50.8407|-0.2559": {
+    "cover": "On call covered by Worthing Hospital",
+    "email": "uhsussex.emergencyreferralssrh.ophthalmic@nhs.net",
+    "lat": 50.8406747,
+    "lon": -0.2558691,
+    "name": "Southlands Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "Southport and Formby District General Hospital|53.6347|-2.9795": {
+    "cover": "Emergency eye clinic\u00a0Mon-Fri 8am-5pm",
+    "email": "soh-tr.ophthalmology@merseywestlancs.nhs.uk",
+    "lat": 53.6346765,
+    "lon": -2.979546,
+    "name": "Southport and Formby District General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01740 4705217\n\nSt Pauls hospital - 01517 062000"
+  },
+  "St Anthony's Hospital|51.3797|-0.2206": {
+    "cover": "Outpatient hospital, no ophthalmology",
+    "email": "",
+    "lat": 51.3797147,
+    "lon": -0.2205915,
+    "name": "St Anthony's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Bartholomew's Hospital|51.5169|-0.1014": {
+    "cover": "No ophthalmology. Part of Barts Health NHS Trust",
+    "email": "bartshealth.whippsurgenteye@nhs.net",
+    "lat": 51.5168725,
+    "lon": -0.1014168,
+    "name": "St Bartholomew's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Charles Centre for Health & Wellbeing|51.5222|-0.2176": {
+    "cover": "No ophthalmology",
+    "email": "",
+    "lat": 51.5222275,
+    "lon": -0.2175883,
+    "name": "St Charles Centre for Health & Wellbeing",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St George's Hospital|51.4265|-0.1732": {
+    "cover": "",
+    "email": "moorfields.sghurgentcare@nhs.net",
+    "lat": 51.4265363,
+    "lon": -0.1732006,
+    "name": "St George's Hospital",
+    "serviceLevel": "booked",
+    "telephone": "02077025542 Option 6 (Patient advise line)\n\nSt George\u2019s switchboard number 02086721255 - bleep 6768 (Healthcare professional only)\n\nExtension 6169 for clinician queries"
+  },
+  "St Helens Hospital|53.4396|-2.7188": {
+    "cover": "Emergency eye clinic\u00a0Mon-Fri 9am-5pm",
+    "email": "ophthalmology.triage@sthk.nhs.uk",
+    "lat": 53.4395575,
+    "lon": -2.7187803,
+    "name": "St Helens Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01744 46136"
+  },
+  "St Helier Hospital|51.3804|-0.1847": {
+    "cover": "08:00-16:30 Mon-Fri Acute Eye Service, via telephone triage. Out of hours covered by Moorfields at St George's Hospital moorfields.sghurgentcare@nhs.net",
+    "email": "est-tr.acute-eye-referral@nhs.net",
+    "lat": 51.3804081,
+    "lon": -0.184749499999953,
+    "name": "St Helier Hospital",
+    "serviceLevel": "booked",
+    "telephone": "020 8296 3817\n\n\"If you are emailing to request a same day assessment for a patient please ensure you also call us on 020 8296 3817. Please note the Acute Eye Service at St Helier Hospital is only open from Monday to Friday (excluding bank holidays) from 8.30 to 4.30. \n\nWhen we are closed, the out of hours urgent care service at Moorfields at St Georges can be contacted on 020 7702 5542 between 8 am and 8.30pm every day, choosing option 6. Between 8.30 pm and 8am please dial 07921 056 594 if urgent advice is needed\""
+  },
+  "St James's University Hospital|53.8067|-1.5212": {
+    "cover": "Eye Casualty\u00a008:30-11:00 and 13:00-17:00",
+    "email": "leedsth-tr.ophurgents@nhs.net",
+    "lat": 53.8067243,
+    "lon": -1.5212437,
+    "name": "St James's University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01132064566"
+  },
+  "St Leonard's Hospital|51.5339|-0.0773": {
+    "cover": "Routine outpatients",
+    "email": "",
+    "lat": 51.5339212,
+    "lon": -0.0772543,
+    "name": "St Leonard's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Martin's Hospital|51.2773|1.1092": {
+    "cover": "No emergency eye cover",
+    "email": "",
+    "lat": 51.2772751,
+    "lon": 1.1092497,
+    "name": "St Martin's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Mary's Hospital|51.5176|-0.1743": {
+    "cover": "No ophthalmology",
+    "email": "",
+    "lat": 51.5175558,
+    "lon": -0.1742676,
+    "name": "St Mary's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Peter's Hospital|51.3782|-0.5277": {
+    "cover": "In hours - emergency eye clinics, overnight - on call service SHARED WITH ASHFORD HOSPITAL AND ROYAL SURREY COUNTY HOSPITAL",
+    "email": "asp-tr.eye.casualty.referrals@nhs.net",
+    "lat": 51.3782069,
+    "lon": -0.5276926,
+    "name": "St Peter's Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "St Richard's Hospital|50.8439|-0.7697": {
+    "cover": "On call covered by Worthing Hospital",
+    "email": "uhsussex.emergencyreferralssrh.ophthalmic@nhs.net",
+    "lat": 50.8438618,
+    "lon": -0.7697286,
+    "name": "St Richard's Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "St Thomas' Hospital|51.4991|-0.1189": {
+    "cover": "08.30-16:00\n\nPatients can self-refer via telephone during opening hours by calling 020 7188 4336 and will receive a triage call from one of our clinicians, within an hour, to advise appropriate next steps.\n\nReferrers should call 020 7188 4336 and will be transferred to a clinician to discuss referral. Once accepted, inform patient to attend the Rapid Access Eye Clinic (Ground Floor, St Thomas' Hospital South Wing) with referral letter.\n\nOut of hours - ophthalmologist on call available for advice via switchboard.\n\nOut of hours \u2013 patient should attend general A&E if true emergency.",
+    "email": "",
+    "lat": 51.4991229,
+    "lon": -0.118920099999968,
+    "name": "St Thomas' Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "020 7188 4336 (triage and referral advice in hours)\n\n020 7188 7188 (switchboard)"
+  },
+  "Stepping Hill Hospital|53.3844|-2.1325": {
+    "cover": "Stockport Eye Centre\u00a009:00 AM to 5:00 PM",
+    "email": "",
+    "lat": 53.3844305,
+    "lon": -2.1324865,
+    "name": "Stepping Hill Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0161 419 5797"
+  },
+  "Stoke Mandeville Hospital|51.7983|-0.8021": {
+    "cover": "UBOC, Eye casualty clinic\n08:00-20:00 monday to friday, 08:00-16:00 weekend via referral only, not walk-in service. Out of hours ophthalmologist on call via switchboard",
+    "email": "buc-tr.buckseyecas@nhs.net",
+    "lat": 51.7982636,
+    "lon": -0.8021389,
+    "name": "Stoke Mandeville Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01296 315 939 (Eye casualty)\n01296 315 000 (switchboard)\nEye casualty alternative direct extension: 5948\n\n1296831220"
+  },
+  "Sunderland Eye Infirmary|54.889|-1.3815": {
+    "cover": "A&E. Telephone triage - nearly all patients need to call this line before attending",
+    "email": "stsft.seiapptsteam@nhs.net",
+    "lat": 54.8889622,
+    "lon": -1.3814644,
+    "name": "Sunderland Eye Infirmary",
+    "serviceLevel": "booked",
+    "telephone": "\u202d01915699952"
+  },
+  "Sussex Eye Hospital at Royal Sussex County Hospital|50.8193|-0.1169": {
+    "cover": "24 hour walk-in eye casualty",
+    "email": "uhsussex.eyecasualtyseh@nhs.net",
+    "lat": 50.8192632,
+    "lon": -0.1168915,
+    "name": "Sussex Eye Hospital at Royal Sussex County Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "01273 696955 x64881"
+  },
+  "Teddington Memorial Hospital|51.4261|-0.3408": {
+    "cover": "Outpatient hospital, no ophthalmology",
+    "email": "",
+    "lat": 51.4261491,
+    "lon": -0.3407941,
+    "name": "Teddington Memorial Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "The Great Western Hospital|51.5386|-1.7279": {
+    "cover": "Eye clinic\u00a008:30-17:00",
+    "email": "",
+    "lat": 51.5386277,
+    "lon": -1.727874,
+    "name": "The Great Western Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage line 01793604868 08:45-20:30"
+  },
+  "The James Cook University Hospital|54.5511|-1.2151": {
+    "cover": "Eye Casualty / Emergency Eye Clinic\u00a0Mon-Fri 0800-1600\n\n.Eye casualty opening times at James Cook University Hospital is:\n\n8am to 4:00pm - Monday to Friday\n8am to 12noon - Weekends and Bank Holidays\n\nOutside of these hours patients requiring urgent attention should present to A&E",
+    "email": "stees.eyeopdfasttrack@nhs.net\n\n\"For urgent patients who need same-day appointment please contact 01642854096 between 8:30 \u2013 2:30 p.m. (Monday to Friday) and 8:30-11 a.m. (weekends and bank holidays)\"\n \nPlease include the patient\u2019s name in the subject line which helps in easy retrieval of the email if there is a patient enquiry. \n \nThis mail box is checked many times everyday and patients who need emergency attention are triaged and booked to the emergency eye care clinic ( fast track clinic)",
+    "lat": 54.5511477,
+    "lon": -1.2151151,
+    "name": "The James Cook University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01642 850850 - Main James Cook"
+  },
+  "The Princess Alexandra|51.7713|0.0863": {
+    "cover": "09:00-17:00 Mon-Fri\n\nOut of hours (weekdays) and weekends Consultant available for advice via switchboard.\n\nConsider referral to Minor Eye Community Service. Referral criteria and details: https://westessexccg.nhs.uk/health-professionals/referrals-pathways-and-guidance/ophthalmology-2/3391-launch-of-west-essex-wide-minor-eye-community-service-mecs-dec-19/file\n\nConsider referral to nearest local ophthalmology unit out of hours",
+    "email": "tpa-tr.ophthalmology@nhs.net (triage service)",
+    "lat": 51.771343,
+    "lon": 0.0863034999999854,
+    "name": "The Princess Alexandra",
+    "serviceLevel": "booked",
+    "telephone": "01279 444 455 (switchboard)\n01279 827158"
+  },
+  "The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust|52.7566|0.447": {
+    "cover": "Eye Casualty\u00a00900-1700, can take same day",
+    "email": "",
+    "lat": 52.7566152,
+    "lon": 0.446967,
+    "name": "The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust",
+    "serviceLevel": "booked",
+    "telephone": "Via switchboard 01553613613, for on-call ophthlamologist"
+  },
+  "The Royal London Hospital|51.5182|-0.0585": {
+    "cover": "No walk-in Eye Casualty at the Royal London Hospital.\n\nAll referrals must be discussed with the Ophthalmologist oncall, and if accepted to attend via the main A&E, unless advised otherwise. Contact is through the main switchboard.\n\nOn-site Ophthalmologist 9am to 5pm available to discuss clinician to clinician referrals.\n\nNo on-site ophthalmologist between 5pm to 9am. The out-of-hours non-resident oncall ophthalmologist can be contacted for clinician to clinician emergency advice and referrals via switchboard.",
+    "email": "",
+    "lat": 51.5182221,
+    "lon": -0.0585175999999592,
+    "name": "The Royal London Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0207 377 7000 (switchboard)"
+  },
+  "Torbay Hospital|50.482|-3.5536": {
+    "cover": "Eye casualty\u00a008:45-17:00",
+    "email": "",
+    "lat": 50.4819889,
+    "lon": -3.5535941,
+    "name": "Torbay Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Casualty nurse 01803655590 Mon-Fri 09:00-17:00, out of hours go to doctor via 01803655088"
+  },
+  "Tunbridge Wells Hospital|51.149|0.3077": {
+    "cover": "Emergency cover by Maidstone",
+    "email": "mtw-tr.eyesrac@nhs.net",
+    "lat": 51.1490342,
+    "lon": 0.3076596,
+    "name": "Tunbridge Wells Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "University College Hospital|51.5251|-0.1365": {
+    "cover": "Cataracts and other eye services",
+    "email": "",
+    "lat": 51.5250869,
+    "lon": -0.1364556,
+    "name": "University College Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "University Hospital Coventry & Warwickshire|52.4207|-1.437": {
+    "cover": "telephone service are Monday to Friday 9am to 5pm (except between 1-1.30pm) and Saturday 9am to 12pm",
+    "email": "uhcw.eyecasualty@nhs.net",
+    "lat": 52.4207433,
+    "lon": -1.4369854,
+    "name": "University Hospital Coventry & Warwickshire",
+    "serviceLevel": "booked",
+    "telephone": "02476 964800"
+  },
+  "University Hospital Lewisham|51.4539|-0.0173": {
+    "cover": "Diabetic Care only, no ophthalmology",
+    "email": "",
+    "lat": 51.4538715,
+    "lon": -0.0173012,
+    "name": "University Hospital Lewisham",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "University Hospital of North Durham|54.7885|-1.5933": {
+    "cover": "UHND Ophthalmology Outpatient\u00a0Monday to Friday, 09:00 AM to 5:00 PM",
+    "email": "",
+    "lat": 54.7885266,
+    "lon": -1.5933009,
+    "name": "University Hospital of North Durham",
+    "serviceLevel": "booked",
+    "telephone": "0191 333 2333 - Main University"
+  },
+  "University Hospital of North Tees|54.583|-1.3476": {
+    "cover": "DETAILS FOR JAMES COOK UNIVERSITY HOSPITAL\n\nEye Casualty / Emergency Eye Clinic Mon-Fri 0800-1600\n\n.Eye casualty opening times at James Cook University Hospital is:\n\n8am to 4:00pm - Monday to Friday\n8am to 12noon - Weekends and Bank Holidays\n\nOutside of these hours patients requiring urgent attention should present to A&E",
+    "email": "stees.eyeopdfasttrack@nhs.net\n\n\"For urgent patients who need same-day appointment please contact 01642854096 between 8:30 \u2013 2:30 p.m. (Monday to Friday) and 8:30-11 a.m. (weekends and bank holidays)\"\n\nPlease include the patient\u2019s name in the subject line which helps in easy retrieval of the email if there is a patient enquiry.\n\nThis mail box is checked many times everyday and patients who need emergency attention are triaged and booked to the emergency eye care clinic ( fast track clinic)",
+    "lat": 54.5830154,
+    "lon": -1.3476047,
+    "name": "University Hospital of North Tees",
+    "serviceLevel": "booked",
+    "telephone": "01642 850850 - Main James Cook\n\nCall 01642 850850 (the central"
+  },
+  "University Hospital of Wales|51.5068|-3.1888": {
+    "cover": "",
+    "email": "",
+    "lat": 51.5067608,
+    "lon": -3.1887982,
+    "name": "University Hospital of Wales",
+    "serviceLevel": "booked",
+    "telephone": "Contact via switchboard"
+  },
+  "Warrington Hospital|53.394|-2.6095": {
+    "cover": "Eye Casualty\u00a0Mon-Fri 9-5pm",
+    "email": "ncm.eyes.referrals@nhs.net",
+    "lat": 53.3939656,
+    "lon": -2.6095244,
+    "name": "Warrington Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Watford General Hospital|51.6486|-0.4033": {
+    "cover": "09:00-17:00 Mon-Fri. Referrals only, via email (triaged Monday-Friday, same day if received by 15:00). Telephone if urgent.\n\nOut of hours Watford A&E/UCC should refer to Western Eye Hospital as per SOP.",
+    "email": "westherts.eyeclinic@nhs.net",
+    "lat": 51.648629,
+    "lon": -0.403260700000033,
+    "name": "Watford General Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01923 436 205\n01923 208 083"
+  },
+  "West Middlesex University Hospital|51.4734|-0.3244": {
+    "cover": "Have a main A&E but no ophthalmology",
+    "email": "",
+    "lat": 51.4734184,
+    "lon": -0.3244425,
+    "name": "West Middlesex University Hospital",
+    "serviceLevel": "none",
+    "telephone": ""
+  },
+  "West Suffolk Hospital|52.2318|0.7092": {
+    "cover": "09:00-17:00",
+    "email": "",
+    "lat": 52.23181,
+    "lon": 0.70923,
+    "name": "West Suffolk Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Switchboard 01284713000 for on-call SpR"
+  },
+  "Western Eye Hospital|51.5209|-0.163": {
+    "cover": "08:00-20:30 Mon-Sun walk-in. Out of hours ophthalmology NROC",
+    "email": "",
+    "lat": 51.5209115,
+    "lon": -0.163034599999946,
+    "name": "Western Eye Hospital",
+    "serviceLevel": "walk-in",
+    "telephone": "020 3312 5791\n020 3312 3245"
+  },
+  "Whipps Cross University Hospital|51.5786|0.0023": {
+    "cover": "Weekdays:\n08:30-16:30 GP/optometrist/AA referral only\n17:00-08:00 On call ophthalmologist via switchboard\nWeekend: \nPreferable to refer to ophthalmologist on call via switchboard prior to sending patient to A&E.\n\nAll referrals must be discussed with the ophthalmologist on call, and if accepted to attend via the main A&E, unless advised otherwise. Contact is through the main switchboard.\n\nNo on-site ophthalmologist between 9pm to 9am. The out-of-hours non-resident on call ophthalmologist can be contacted for clinician to clinician emergency advice and referrals via switchboard.",
+    "email": "bartshealth.whippsurgenteye@nhs.net",
+    "lat": 51.5785992,
+    "lon": 0.00232289999996738,
+    "name": "Whipps Cross University Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0208 539 5522 Ext: 6940/6939/6500/6777\nReception 25715\n\nMobile 07971655894 (Mon-Fri 09:00- 17.00) DO NOT GIVE THIS MOBILE NUMBER OUT TO PATIENTS"
+  },
+  "Whittington Hospital|51.5666|-0.1399": {
+    "cover": "Some eye services. Emergency care covered by Royal Free",
+    "email": "",
+    "lat": 51.5665993,
+    "lon": -0.1398534,
+    "name": "Whittington Hospital",
+    "serviceLevel": "none",
+    "telephone": "0203 7582402 or 0203 7527277"
+  },
+  "William Harvey Hospital|51.1414|0.9145": {
+    "cover": "In hours - emergency eye clinic. Overnight - on call service",
+    "email": "ekhuft.urgenteye@nhs.net",
+    "lat": 51.1414328,
+    "lon": 0.9144713,
+    "name": "William Harvey Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Woking Community Hospital|51.3152|-0.5566": {
+    "cover": "Limited number of eye casualty slots as part of Ashford and St Peter's Hospitals.",
+    "email": "Patients can be referred to either Ashford and St Peter's Hospital\nasp-tr.eye.casualty.referrals@nhs.net\n\nor Guildford rsch.eyeclinic@nhs.net",
+    "lat": 51.3151742,
+    "lon": -0.5566267,
+    "name": "Woking Community Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Worcestershire Royal Hospital|52.1915|-2.1809": {
+    "cover": "",
+    "email": "",
+    "lat": 52.1915064,
+    "lon": -2.1808725,
+    "name": "Worcestershire Royal Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01905 760422"
+  },
+  "Worthing Hospital|50.8167|-0.3642": {
+    "cover": "In hours - emergency eye clinic. Overnight - on call service",
+    "email": "uhsussex.emergencyreferralssrh.ophthalmic@nhs.net",
+    "lat": 50.8166785,
+    "lon": -0.364181,
+    "name": "Worthing Hospital",
+    "serviceLevel": "booked",
+    "telephone": ""
+  },
+  "Wrexham Maelor Hospital|53.0468|-3.0079": {
+    "cover": "Eye Casualty Clinic\u00a0Mon-Fri 8:30-4pm",
+    "email": "bcu.ophthalmologyreferralseast@wales.nhs.uk",
+    "lat": 53.0468463,
+    "lon": -3.0079071,
+    "name": "Wrexham Maelor Hospital",
+    "serviceLevel": "booked",
+    "telephone": "If you feel that the patient needs to be seen within 72 hours then please contact our on-call team via eye clinic 03000 848670 or via switchboard 03000 847847 ."
+  },
+  "Wrightington, Wigan & Leigh NHS Foundation Trust|53.5914|-2.7112": {
+    "cover": "URC, Boston House Eye Unit\u00a08-5, Mon-Fri",
+    "email": "wwl-tr.urgenteyes@nhs.net",
+    "lat": 53.5913896,
+    "lon": -2.7111719,
+    "name": "Wrightington, Wigan & Leigh NHS Foundation Trust",
+    "serviceLevel": "booked",
+    "telephone": "0300 707 2244"
+  },
+  "Yeovil Hospital|50.9448|-2.6343": {
+    "cover": "Urgent eye clinic 09:00-17:00",
+    "email": "urgenteyeclinicreferrals@somersetft.nhs.uk\u00a0\n\nOur opening hours for email referrals are 08:30 - 17:00 Monday-Friday excluding Bank Holidays.",
+    "lat": 50.9447524,
+    "lon": -2.6343106,
+    "name": "Yeovil Hospital",
+    "serviceLevel": "booked",
+    "telephone": "Triage 01935606309 Mon-Fri 09:00-17:00"
+  },
+  "York Hospital|53.97|-1.0836": {
+    "cover": "Emergency Eye Clinic\u00a008:30- 17:00",
+    "email": "yhs-tr.urgenteyetriageyork@nhs.net",
+    "lat": 53.9699817,
+    "lon": -1.083555,
+    "name": "York Hospital",
+    "serviceLevel": "booked",
+    "telephone": "01904726758 (Mon- Friday)\nCall 01904631313 (after 5 pm from Mon-Fri and at weekends)"
+  },
+  "Ysbyty Gwynedd Hospital|53.2091|-4.1602": {
+    "cover": "Eye Casualty Clinic\u00a0Mon-Fri 9am-4.30pm",
+    "email": "OphthalmologyOnCallEyeReferralsWest@wales.nhs.uk",
+    "lat": 53.2091119,
+    "lon": -4.1602153,
+    "name": "Ysbyty Gwynedd Hospital",
+    "serviceLevel": "booked",
+    "telephone": "0300 841 779"
+  }
+}
