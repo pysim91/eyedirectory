@@ -90,11 +90,14 @@ export default function HealthcareGate() {
             aria-invalid={touched && !isValid}
             className="w-full rounded-xl border border-line bg-white px-4 py-3 text-base font-medium text-ink placeholder:text-ink/40 focus:border-primary dark:border-white/10 dark:bg-ink dark:text-white dark:placeholder:text-white/40 dark:focus:border-primary-light"
           />
-          {touched && !isValid && (
-            <span className="mt-1.5 block text-xs font-bold text-status-booked">
-              Enter a valid registration number.
-            </span>
-          )}
+          {/* Always occupies its line so showing the error doesn't grow the
+              (vertically centred) dialog and shift it upward. */}
+          <span
+            aria-live="polite"
+            className="mt-1.5 block min-h-[1rem] text-xs font-bold text-status-booked"
+          >
+            {touched && !isValid ? "Enter a valid registration number." : ""}
+          </span>
         </label>
 
         <button

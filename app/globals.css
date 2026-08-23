@@ -11,6 +11,11 @@
     scroll-behavior: smooth;
     font-size: 100%;
     transition: font-size 0.2s ease;
+    /* Always reserve the scrollbar gutter. Without this, anything that sets
+       overflow:hidden on body (the healthcare gate) removes the scrollbar and
+       reflows the whole page sideways, which real-user monitoring picked up as
+       a large layout shift. */
+    scrollbar-gutter: stable;
   }
 
   html.dark {
