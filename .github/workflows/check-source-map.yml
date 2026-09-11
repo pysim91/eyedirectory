@@ -1,9 +1,11 @@
-name: Weekly source map check
+name: Fortnightly source map check
 
 on:
   schedule:
-    # Every Monday at 07:00 UTC (8am UK during BST, 7am during GMT)
-    - cron: "0 7 * * 1"
+    # 1st and 15th of each month at 07:00 UTC (8am UK during BST, 7am during
+    # GMT). Cron can't express a true 14-day cycle, so fixed days of the month
+    # are used instead -- gaps are 14-16 days depending on month length.
+    - cron: "0 7 1,15 * *"
   workflow_dispatch:
 
 permissions:
@@ -41,7 +43,7 @@ jobs:
               repo: context.repo.repo,
               title: `Source map changes detected - ${today}`,
               body: [
-                'The weekly automated check found differences between the UK Eye Casualty Services source map and the last-reviewed snapshot.',
+                'The fortnightly automated check found differences between the UK Eye Casualty Services source map and the last-reviewed snapshot.',
                 '',
                 'Review these and decide what to apply to `data/hospitals.ts`. Note that some entries there have been intentionally hand-edited and may differ from the source map on purpose.',
                 '',
@@ -71,7 +73,7 @@ jobs:
               repo: context.repo.repo,
               title: `Source map check failed to run - ${today}`,
               body: [
-                'The weekly automated check could not complete, so no comparison was made this week.',
+                'The fortnightly automated check could not complete, so no comparison was made this run.',
                 '',
                 '```',
                 report.trim(),
