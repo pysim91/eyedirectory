@@ -1,0 +1,10 @@
+{
+  "Moorfields Eye Hospital NHS Foundation Trust|51.5276|-0.0898": {
+    "fields": ["telephone"],
+    "reason": "Site intentionally rewords this as an eye-care-professional-only referral line rather than the source map's patient-facing warning."
+  },
+  "St Thomas' Hospital|51.4991|-0.1189": {
+    "fields": ["serviceLevel"],
+    "reason": "Site intentionally lists this as booked/referral-only rather than the source map's walk-in classification."
+  }
+}

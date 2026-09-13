@@ -27,5 +27,7 @@ next-env.d.ts
 # claude code local settings
 .claude/settings.local.json
 
-# fortnightly digest workflow runtime artifact
+# fortnightly digest workflow runtime artifacts
 report.txt
+diff.json
+pr-body.txt

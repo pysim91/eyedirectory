@@ -16,6 +16,9 @@ Usage:
       # fetch fresh and overwrite the snapshot with it, no diff printed.
       # Run this after applying a week's changes to data/hospitals.ts so the
       # next check starts from the new baseline.
+  python3 scripts/check_source_map.py --diff-json PATH
+      # also write {"result", "old_entries", "new_entries"} as JSON to PATH,
+      # for scripts/apply_source_map_changes.py to consume.
 
 Exit code: 0 if no differences found, 1 if differences found (so a scheduled
 job can branch on whether to notify).
@@ -158,6 +161,11 @@ def print_report(result: dict, old: dict, new: dict) -> None:
 def main() -> int:
     save_baseline = "--save-baseline" in sys.argv
 
+    diff_json_path = None
+    if "--diff-json" in sys.argv:
+        idx = sys.argv.index("--diff-json")
+        diff_json_path = sys.argv[idx + 1]
+
     try:
         kml_bytes = fetch_kml()
     except Exception as exc:
@@ -178,6 +186,16 @@ def main() -> int:
 
     result = diff(old_entries, new_entries)
     print_report(result, old_entries, new_entries)
+
+    if diff_json_path:
+        Path(diff_json_path).write_text(
+            json.dumps(
+                {"result": result, "old_entries": old_entries, "new_entries": new_entries},
+                indent=2,
+                sort_keys=True,
+            )
+            + "\n"
+        )
 
     has_changes = bool(result["added"] or result["removed"] or result["changed"])
     return 1 if has_changes else 0
