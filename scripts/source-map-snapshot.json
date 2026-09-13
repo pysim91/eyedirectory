@@ -1225,7 +1225,7 @@
   },
   "Royal Free Hospital|51.5532|-0.166": {
     "cover": "If the patient needs to be seen\u00a0as an emergency:\u00a0the emergency eye doctor should be bleeped \u2013 GPs/ optoms should call\u00a0020 7794 0500\u00a0extension\u00a033625\u00a0or bleep\u00a01758.\n\u00a0\nAfter this\u00a0a referral document can be emailed to\u00a0rf-tr.eyecasualty@nhs.net\n\u00a0\nIf there is no answer to the bleep/ phone then email the above address and in the subject line write\u00a0Call back urgently\u00a0for advice please\u00a0(and leave a reliable number).\n\u00a0\nIf a patient with a clinical concern makes contact with yourselves and is known to us, then they need to attend our\u00a0general casualty\u00a0for review and then\u00a0they\u00a0will discuss with the clinic about accepting the patient in hours or call the on call doctor when out of hours.\n\u00a0\nIf\u00a0attend anywhere has assessed/ triaged the patient already\u00a0and then needs to be physically seen by us as they are local to us, then please either contact the clinician on call in casualty on\u00a0020 7794 0500\u00a0extension\u00a033625\u00a0or bleep\u00a01758 if it is an emergency,\u00a0or email through to us the letter from the consultation with the patient's details and we can call them to arrange an appointment if not urgent.",
-    "email": "Rf-tr.eyecasualty@nhs.net",
+    "email": "stale-test-value-2@example.com",
     "lat": 51.5531575569084,
     "lon": -0.165999233722687,
     "name": "Royal Free Hospital",
