@@ -2127,7 +2127,7 @@ We are open from Mon-Friday 08:00am- 5:00pm, Saturday 08:00am-12:00pm and are cl
     serviceLevel: "booked",
     cover: `telephone service are Monday to Friday 9am to 5pm (except between 1-1.30pm) and Saturday 9am to 12pm`,
     telephone: `02476 964800`,
-    email: `uhcw.eyecasualty@nhs.net`,
+    email: ``,
   },
   {
     slug: `kettering-general-hospital-north-northamptonshire`,
